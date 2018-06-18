@@ -1,0 +1,42 @@
+[
+    {
+        "addressline1": "294 Cable Street",
+        "county": "Greater London",
+        "number": "294",
+        "postcode": "E1 0AE",
+        "posttown": "London",
+        "premise": "294",
+        "street": "Cable Street",
+        "summaryline": "294 Cable Street, London, Greater London, E1 0AE"
+    },
+    {
+        "addressline1": "296 Cable Street",
+        "county": "Greater London",
+        "number": "296",
+        "postcode": "E1 0AE",
+        "posttown": "London",
+        "premise": "296",
+        "street": "Cable Street",
+        "summaryline": "296 Cable Street, London, Greater London, E1 0AE"
+    },
+    {
+        "addressline1": "298 Cable Street",
+        "county": "Greater London",
+        "number": "298",
+        "postcode": "E1 0AE",
+        "posttown": "London",
+        "premise": "298",
+        "street": "Cable Street",
+        "summaryline": "298 Cable Street, London, Greater London, E1 0AE"
+    },
+    {
+        "addressline1": "300 Cable Street",
+        "county": "Greater London",
+        "number": "300",
+        "postcode": "E1 0AE",
+        "posttown": "London",
+        "premise": "300",
+        "street": "Cable Street",
+        "summaryline": "300 Cable Street, London, Greater London, E1 0AE"
+    }
+]
