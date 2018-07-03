@@ -7,8 +7,10 @@ gem "sinatra"
 gem "sinatra-contrib", require: false
 
 gem "http"
+gem "puma"
 gem "redis"
-gem "thin"
+
+gem "newrelic_rpm"
 
 group :development do
   gem "byebug"

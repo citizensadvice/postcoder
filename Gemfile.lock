@@ -13,11 +13,9 @@ GEM
     concurrent-ruby (1.0.5)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
-    daemons (1.2.6)
     diff-lcs (1.3)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
-    eventmachine (1.2.7)
     hashdiff (0.3.7)
     http (3.3.0)
       addressable (~> 2.3)
@@ -33,7 +31,9 @@ GEM
     minitest (5.11.3)
     multi_json (1.13.1)
     mustermann (1.0.2)
+    newrelic_rpm (5.2.0.345)
     public_suffix (3.0.2)
+    puma (3.11.4)
     rack (2.0.5)
     rack-protection (2.0.3)
       rack
@@ -67,10 +67,6 @@ GEM
       rack-protection (= 2.0.3)
       sinatra (= 2.0.3)
       tilt (>= 1.3, < 3)
-    thin (1.7.2)
-      daemons (~> 1.0, >= 1.0.9)
-      eventmachine (~> 1.0, >= 1.0.4)
-      rack (>= 1, < 3)
     thread_safe (0.3.6)
     tilt (2.0.8)
     tzinfo (1.2.5)
@@ -89,12 +85,13 @@ PLATFORMS
 DEPENDENCIES
   byebug
   http
+  newrelic_rpm
+  puma
   rack-test
   redis
   rspec
   sinatra
   sinatra-contrib
-  thin
   webmock
 
 RUBY VERSION
