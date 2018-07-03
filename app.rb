@@ -1,12 +1,13 @@
 # frozen_string_literal: true
 
 require "sinatra"
+require "newrelic_rpm"
 require_relative "lib/cache"
 require_relative "lib/query"
 
-if ENV.fetch("APP_ENV", "development") == "production"
-  set :server, "thin"
-else
+configure { set :server, :puma }
+
+if ENV.fetch("APP_ENV", "development") != "production"
   require "sinatra/reloader"
   enable :reloader
 

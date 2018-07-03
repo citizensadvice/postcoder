@@ -14,7 +14,7 @@ services:
       - APP_ENV=development
       - API_KEY=PCW45-12345-12345-1234X
       - CACHE_URL=redis://cache:6379/1
-      - CACHE_TTL=86400
+      - CACHE_TTL=86_400
 
   cache:
     image: redis:3.0.7
