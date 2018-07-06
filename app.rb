@@ -17,15 +17,20 @@ if ENV.fetch("APP_ENV", "development") != "production"
 end
 
 get "/pcw/:api_key/address/uk/:postcode" do
-  return 403 if invalid_key?
+  valid_key? || halt(403)
   content_type query.options[:format]
   Cache.get(key) || Cache.set(key, value)
 end
 
+get "/status" do
+  Cache.get("_") # Test if Redis is connecting
+  200
+end
+
 private
 
-def invalid_key?
-  params[:api_key] != Query::API_KEY
+def valid_key?
+  params[:api_key] == Query::API_KEY
 end
 
 def key

@@ -2,9 +2,14 @@
 
 require_relative "../app"
 
-before(:each) { Cache.flush }
+describe "status" do
+  it "returns 200 status" do
+    get "/status"
+    expect(last_response).to be_ok
+  end
+end
 
-describe "context type" do
+describe "postcoder proxy" do
   let(:endpoint) { "/pcw/#{api_key}/address/uk/E1" }
 
   it "returns JSON as default" do
@@ -20,6 +25,7 @@ describe "context type" do
   end
 
   it "returns body" do
+    Cache.flush
     get endpoint
     expect(last_response.body).to eq read_json("E1")
   end
