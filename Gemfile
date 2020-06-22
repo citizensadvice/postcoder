@@ -9,6 +9,7 @@ gem "sinatra-contrib", require: false
 gem "http"
 gem "puma"
 gem "redis"
+gem "activesupport"
 
 gem "newrelic_rpm"
 
