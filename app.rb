@@ -18,6 +18,8 @@ end
 
 get "/pcw/:api_key/address/uk/:postcode" do
   valid_key? || halt(403)
+  query_response.status.success? || halt(504)
+
   content_type query.options[:format]
   Cache.get(key) || Cache.set(key, value)
 end
@@ -38,13 +40,23 @@ def key
 end
 
 def value
-  query.response.to_s
+  query_response.body.to_s
+end
+
+def query_response
+  @query_response ||= query.response
 end
 
 def query
   @query ||= Query.new(params)
 end
 
+# Forbidden
 error 403 do
   "Incorrect Search Key (check Status service for additional details)"
+end
+
+# Gateway timeout
+error 504 do
+  "[]"
 end

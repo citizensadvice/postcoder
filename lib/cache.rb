@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "redis"
+require "active_support/core_ext/object"
 
 class Cache
   OPTIONS = {
@@ -19,7 +20,7 @@ class Cache
     end
 
     def set(key, value)
-      REDIS.setex expand_cache_key(key), OPTIONS[:ttl], value
+      REDIS.setex(expand_cache_key(key), OPTIONS[:ttl], value) if value.present?
       value
     end
 

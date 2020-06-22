@@ -10,9 +10,11 @@ class Query
 
   # https://developers.alliescomputing.com/postcoder-web-api/address-lookup
   ALLOWABLE_OPTIONS = %i[format lines page include exclude callback alias addtags].freeze
-  DEFAULT_OPTIONS = Sinatra::IndifferentHash.new.merge(format: "json")
   API_ORIGIN = "https://ws.postcoder.com"
   API_KEY = ENV.fetch("API_KEY")
+
+  DEFAULT_OPTIONS = Sinatra::IndifferentHash.new.merge(format: "json")
+  TIMEOUT_RESPONSE = HTTP::Response.new(status: 504, version: "1.1", connection: nil)
 
   def initialize(params)
     @postcode = params[:postcode].squish.upcase
@@ -24,6 +26,8 @@ class Query
       HTTP
       .timeout(connect: 5, read: 5)
       .get(endpoint, params: options)
+  rescue HTTP::TimeoutError
+    TIMEOUT_RESPONSE
   end
 
   private
