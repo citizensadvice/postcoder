@@ -34,6 +34,11 @@ describe "postcoder proxy" do
     get "/pcw/INVALID-KEY/address/uk/E1"
     expect(last_response).to be_forbidden
   end
+
+  it "returns 504 if timeout" do
+    get "/pcw/#{api_key}/address/uk/T1"
+    expect(last_response.status).to eq 504
+  end
 end
 
 describe "caching" do

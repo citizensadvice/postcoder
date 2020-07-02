@@ -32,4 +32,10 @@ describe "Query" do
     subject = Query.new(postcode: "E1 2EA")
     expect(subject.send(:endpoint)).to eq "https://ws.postcoder.com/pcw/PCW45-12345-12345-1234X/address/uk/E1%202EA"
   end
+
+  it "returns 504 response if timed out" do
+    subject = Query.new(postcode: "T1")
+    expect(subject.response.status).to_not be_success
+    expect(subject.response.status).to eq 504
+  end
 end

@@ -29,5 +29,6 @@ RSpec.configure do |config|
   config.before(:example) do
     stub_request(:any, /E1/).to_return(status: 200, body: read_json("E1"))
     stub_request(:any, /N2/).to_return(status: 200, body: read_json("N2"))
+    stub_request(:any, /T1/).to_timeout
   end
 end
