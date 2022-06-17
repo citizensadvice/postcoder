@@ -27,10 +27,7 @@ RUN addgroup ruby -g 3000 && adduser -D -h /home/ruby -u 3000 -G ruby ruby
 COPY . $APP_ROOT
 WORKDIR $APP_ROOT
 
-RUN chown -R ruby /app \
-    && chmod -R u-w /app \
-    && mkdir -p /app/cache \
-    && chmod -R 777 /app/cache
+RUN chown -R ruby /app && chmod -R u-w /app
 
 USER ruby
 
