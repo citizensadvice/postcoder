@@ -14,7 +14,6 @@ class Query
   API_KEY = ENV.fetch("API_KEY")
 
   DEFAULT_OPTIONS = Sinatra::IndifferentHash.new.merge(format: "json")
-  TIMEOUT_RESPONSE = HTTP::Response.new(status: 504, version: "1.1", connection: nil)
 
   def initialize(params)
     @postcode = params[:postcode].squish.upcase
@@ -22,12 +21,7 @@ class Query
   end
 
   def response
-    @response ||=
-      HTTP
-      .timeout(connect: 5, read: 5)
-      .get(endpoint, params: options)
-  rescue HTTP::TimeoutError
-    TIMEOUT_RESPONSE
+    @response ||= HTTP.timeout(connect: 5, read: 5).get(endpoint, params: options)
   end
 
   private
@@ -35,7 +29,7 @@ class Query
   def endpoint
     Addressable::Template
       .new("#{API_ORIGIN}/pcw/#{API_KEY}/address/uk/{postcode}")
-      .expand(postcode: postcode)
+      .expand(postcode:)
       .to_s
   end
 end

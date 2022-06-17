@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "byebug"
+require "debug"
 require "rack/test"
 require "rspec"
 require "webmock/rspec"
@@ -26,7 +26,7 @@ end
 RSpec.configure do |config|
   config.include RSpecMixin
 
-  config.before(:example) do
+  config.before do
     stub_request(:any, /E1/).to_return(status: 200, body: read_json("E1"))
     stub_request(:any, /N2/).to_return(status: 200, body: read_json("N2"))
     stub_request(:any, /T1/).to_timeout

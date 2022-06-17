@@ -17,5 +17,5 @@ services:
       - CACHE_TTL=86_400
 
   cache:
-    image: redis:3.0.7
+    image: redis:5.0.14-alpine3.16
     command: redis-server --maxmemory 100mb --maxmemory-policy allkeys-lru

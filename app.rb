@@ -22,6 +22,8 @@ get "/pcw/:api_key/address/uk/:postcode" do
 
   content_type query.options[:format]
   Cache.get(key) || Cache.set(key, value)
+rescue HTTP::TimeoutError
+  504
 end
 
 get "/status" do
