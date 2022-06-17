@@ -7,14 +7,14 @@ services:
     links:
       - cache
     ports:
-      - 4000:4000
+      - 4001:4000
     volumes:
       - .:/app
     environment:
       - APP_ENV=development
-      - API_KEY=PCW45-12345-12345-1234X
+      - API_KEY=${API_KEY:-PCW45-12345-12345-1234X}
       - CACHE_URL=redis://cache:6379/1
-      - CACHE_TTL=86_400
+      - CACHE_TTL=2_592_000
 
   cache:
     image: redis:5.0.14-alpine3.16
