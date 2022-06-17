@@ -17,10 +17,16 @@ class Cache
   class << self
     def get(key)
       REDIS.get expand_cache_key(key)
+    rescue Redis::CannotConnectError => e
+      NewRelic::Agent.notice_error(e)
+      nil
     end
 
     def set(key, value)
       REDIS.setex(expand_cache_key(key), OPTIONS[:ttl], value) if value.present?
+      value
+    rescue Redis::CannotConnectError => e
+      NewRelic::Agent.notice_error(e)
       value
     end
 

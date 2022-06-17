@@ -4,6 +4,22 @@ Find addresses using the [Allies postcoder service](https://postcoder.com/docs/a
 
 This service caches the results to save on credits
 
+## API
+
+GET `http://example.com/addressses/{searchterm}`
+
+This will pass the search term to GET `https://ws.postcoder.com/pcw/{apikey}/address/uk/{searchterm}`
+
+The query options `format`, `line`, `page`, `include`, `exclude`, `callback`, `alias` and `addtags` will also be passed.
+
+If the query option `refresh=true` is provided the cache will be skipped and updated, _for that request_.
+
+### Deprecated endpoint
+
+The older verbose endpoint should no longer be used and will be removed in the future.
+
+GET `http://example.com/pcw/{apikey}/address/uk/{searchterm}`
+
 ## Build
 
 ```

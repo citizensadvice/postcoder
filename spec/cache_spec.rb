@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require "newrelic_rpm"
 require_relative "../lib/cache"
 
 describe Cache do
@@ -9,6 +10,13 @@ describe Cache do
     it "retrieves the cache" do
       allow(redis).to receive(:get).with("postcoder/key").and_return("value")
       expect(described_class.get("key")).to eq "value"
+    end
+
+    it "is resilient to cannot connect errors" do
+      allow(NewRelic::Agent).to receive(:notice_error)
+      allow(redis).to receive(:get).and_raise(Redis::CannotConnectError)
+      expect(described_class.get("key")).to be_nil
+      expect(NewRelic::Agent).to have_received(:notice_error).with(a_kind_of(Redis::CannotConnectError))
     end
   end
 
@@ -29,6 +37,13 @@ describe Cache do
       allow(redis).to receive(:setex)
       described_class.set("key", nil)
       expect(redis).not_to have_received(:setex)
+    end
+
+    it "is resilient to cannot connect errors" do
+      allow(NewRelic::Agent).to receive(:notice_error)
+      allow(redis).to receive(:setex).and_raise(Redis::CannotConnectError)
+      expect(described_class.set("key", "value")).to eq "value"
+      expect(NewRelic::Agent).to have_received(:notice_error).with(a_kind_of(Redis::CannotConnectError))
     end
   end
 end

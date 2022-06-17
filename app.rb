@@ -16,12 +16,18 @@ if ENV.fetch("APP_ENV", "development") != "production"
   end
 end
 
+# Deprecated
 get "/pcw/:api_key/address/uk/:postcode" do
   valid_key? || halt(403)
-  query_response.status.success? || halt(504)
-
   content_type query.options[:format]
   Cache.get(key) || Cache.set(key, value)
+rescue HTTP::TimeoutError
+  504
+end
+
+get "/addresses/:postcode" do
+  content_type query.options[:format].presence_in(%w[json xml]) || "json"
+  (params[:refresh] == "true" ? nil : Cache.get(key)) || Cache.set(key, value)
 rescue HTTP::TimeoutError
   504
 end
@@ -55,6 +61,7 @@ end
 
 # Forbidden
 error 403 do
+  content_type "text/plain"
   "Incorrect Search Key (check Status service for additional details)"
 end
 

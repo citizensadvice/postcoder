@@ -24,12 +24,18 @@ describe Query do
   end
 
   it "fetches endpoint" do
+    stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/E1?format=json")
+      .to_return(status: 200, body: read_json("E1"))
+
     subject = described_class.new(postcode: "E1")
     expect(subject.response.to_s).to eq read_json("E1")
   end
 
   it "URI-escape endpoint" do
+    stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/E1%202EA?format=json")
+      .to_return(status: 200, body: read_json("E1"))
+
     subject = described_class.new(postcode: "E1 2EA")
-    expect(subject.send(:endpoint)).to eq "https://ws.postcoder.com/pcw/PCW45-12345-12345-1234X/address/uk/E1%202EA"
+    expect(subject.response.to_s).to eq read_json("E1")
   end
 end

@@ -4,3 +4,6 @@ inherit_gem:
 
 RSpec/MultipleExpectations:
   Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
