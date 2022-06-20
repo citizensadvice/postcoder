@@ -15,7 +15,7 @@ node("docker && awsaccess"){
   }
 
   stage("lint"){
-    sh "docker-compose run -e POSTCODER_VERSION_TAG=:${env.BUILD_TAG} --rm app bundle exec rubocop"
+    sh "docker-compose run -e POSTCODER_VERSION_TAG=:${env.BUILD_TAG} -e APP_ENV=test --rm app bundle exec rubocop"
   }
 
   stage("test"){
