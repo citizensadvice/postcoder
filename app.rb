@@ -4,6 +4,7 @@ require "sinatra"
 require "newrelic_rpm"
 require_relative "lib/cache"
 require_relative "lib/query"
+require_relative "lib/http_error"
 
 configure { set :server, :puma }
 
@@ -29,6 +30,7 @@ get "/addresses/:postcode" do
   content_type query.options[:format].presence_in(%w[json xml]) || "json"
   (params[:refresh] == "true" ? nil : Cache.get(key)) || Cache.set(key, value)
 rescue HTTP::TimeoutError
+  content_type "text/plain"
   504
 end
 
@@ -48,6 +50,8 @@ def key
 end
 
 def value
+  raise HTTPError, query_response unless query_response.status.success?
+
   query_response.body.to_s
 end
 
@@ -65,7 +69,7 @@ error 403 do
   "Incorrect Search Key (check Status service for additional details)"
 end
 
-# Gateway timeout
-error 504 do
-  "[]"
+error HTTPError do
+  content_type "text/plain"
+  env["sinatra.error"].message
 end

@@ -54,7 +54,29 @@ describe "App" do
 
         get "/pcw/#{api_key}/address/uk/T1"
         expect(last_response.status).to eq 504
-        expect(last_response.body).to eq "[]"
+        expect(last_response.body).to eq ""
+      end
+    end
+
+    context "with error response" do
+      it "returns 500" do
+        stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/T1?format=json")
+          .to_return(status: 500, body: "foo")
+
+        get "/pcw/#{api_key}/address/uk/T1"
+        expect(last_response.status).to eq 500
+        expect(last_response.body).to eq "response error: 500 Internal Server Error: foo"
+      end
+    end
+
+    context "with 404 response" do
+      it "returns 404" do
+        stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/T1?format=json")
+          .to_return(status: 404, body: "foo")
+
+        get "/pcw/#{api_key}/address/uk/T1"
+        expect(last_response.status).to eq 500
+        expect(last_response.body).to eq "response error: 404 Not Found: foo"
       end
     end
 
@@ -108,6 +130,14 @@ describe "App" do
         expect(Cache).to have_received(:get).once.with('N2/{"format"=>"json"}')
         expect(Cache).to have_received(:set).once
       end
+
+      it "does not set the cache if an error" do
+        stub_request(:get, %r{https://ws\.postcoder\.com/}).to_return(status: 500, body: read_json("E1"))
+        allow(Cache).to receive(:set)
+        get "/pcw/#{api_key}/address/uk/N2"
+        expect(last_response.status).to eq 500
+        expect(Cache).not_to have_received(:set)
+      end
     end
   end
 
@@ -138,23 +168,36 @@ describe "App" do
       end
     end
 
-    context "with invalid key" do
-      it "returns 403" do
-        get "/pcw/INVALID-KEY/address/uk/E1"
-        expect(last_response).to be_forbidden
-        expect(last_response.body).to eq "Incorrect Search Key (check Status service for additional details)"
-        expect(last_response.headers["Content-Type"]).to include "text/plain"
-      end
-    end
-
     context "with timeout" do
-      it "returns 504" do
+      it "returns 500" do
         stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/T1?format=json")
           .to_timeout
 
-        get "/pcw/#{api_key}/address/uk/T1"
+        get "/addresses/T1"
         expect(last_response.status).to eq 504
-        expect(last_response.body).to eq "[]"
+        expect(last_response.body).to eq ""
+      end
+    end
+
+    context "with error response" do
+      it "returns 500" do
+        stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/T1?format=json")
+          .to_return(status: 500, body: "foo")
+
+        get "/addresses/T1"
+        expect(last_response.status).to eq 500
+        expect(last_response.body).to eq "response error: 500 Internal Server Error: foo"
+      end
+    end
+
+    context "with 404 response" do
+      it "returns 404" do
+        stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/T1?format=json")
+          .to_return(status: 404, body: "foo")
+
+        get "/addresses/T1"
+        expect(last_response.status).to eq 500
+        expect(last_response.body).to eq "response error: 404 Not Found: foo"
       end
     end
 
@@ -215,6 +258,14 @@ describe "App" do
         expect(last_response).to be_ok
         expect(Cache).not_to have_received(:get)
         expect(Cache).to have_received(:set).once
+      end
+
+      it "does not set the cache if an error" do
+        stub_request(:get, %r{https://ws\.postcoder\.com/}).to_return(status: 500, body: read_json("E1"))
+        allow(Cache).to receive(:set)
+        get "/addresses/N2?refresh=true"
+        expect(last_response.status).to eq 500
+        expect(Cache).not_to have_received(:set)
       end
     end
   end

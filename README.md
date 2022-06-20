@@ -49,7 +49,7 @@ http://localhost:4001/pcw/PCW45-12345-12345-1234X/address/uk/E1
 ### Testing
 
 ```
-docker-compose run --rm app bundle exec rspec
+docker-compose run --rm -e APP_ENV=test app bundle exec rspec
 ```
 
 ### Configuration
