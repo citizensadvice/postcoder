@@ -22,16 +22,11 @@ get "/pcw/:api_key/address/uk/:postcode" do
   valid_key? || halt(403)
   content_type query.options[:format]
   Cache.get(key) || Cache.set(key, value)
-rescue HTTP::TimeoutError
-  504
 end
 
 get "/addresses/:postcode" do
   content_type query.options[:format].presence_in(%w[json xml]) || "json"
   (params[:refresh] == "true" ? nil : Cache.get(key)) || Cache.set(key, value)
-rescue HTTP::TimeoutError
-  content_type "text/plain"
-  504
 end
 
 get "/status" do
@@ -70,6 +65,12 @@ error 403 do
 end
 
 error HTTPError do
+  NewRelic::Agent.notice_error(env["sinatra.error"])
   content_type "text/plain"
   env["sinatra.error"].message
+end
+
+error HTTP::TimeoutError do
+  NewRelic::Agent.notice_error(env["sinatra.error"])
+  504
 end

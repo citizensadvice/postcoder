@@ -49,34 +49,40 @@ describe "App" do
 
     context "with timeout" do
       it "returns 504" do
+        allow(NewRelic::Agent).to receive(:notice_error)
         stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/T1?format=json")
           .to_timeout
 
         get "/pcw/#{api_key}/address/uk/T1"
         expect(last_response.status).to eq 504
         expect(last_response.body).to eq ""
+        expect(NewRelic::Agent).to have_received(:notice_error).with(a_kind_of(HTTP::TimeoutError))
       end
     end
 
     context "with error response" do
       it "returns 500" do
+        allow(NewRelic::Agent).to receive(:notice_error)
         stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/T1?format=json")
           .to_return(status: 500, body: "foo")
 
         get "/pcw/#{api_key}/address/uk/T1"
         expect(last_response.status).to eq 500
         expect(last_response.body).to eq "response error: 500 Internal Server Error: foo"
+        expect(NewRelic::Agent).to have_received(:notice_error).with(a_kind_of(HTTPError))
       end
     end
 
     context "with 404 response" do
       it "returns 404" do
+        allow(NewRelic::Agent).to receive(:notice_error)
         stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/T1?format=json")
           .to_return(status: 404, body: "foo")
 
         get "/pcw/#{api_key}/address/uk/T1"
         expect(last_response.status).to eq 500
         expect(last_response.body).to eq "response error: 404 Not Found: foo"
+        expect(NewRelic::Agent).to have_received(:notice_error).with(a_kind_of(HTTPError))
       end
     end
 
@@ -170,34 +176,40 @@ describe "App" do
 
     context "with timeout" do
       it "returns 500" do
+        allow(NewRelic::Agent).to receive(:notice_error)
         stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/T1?format=json")
           .to_timeout
 
         get "/addresses/T1"
         expect(last_response.status).to eq 504
         expect(last_response.body).to eq ""
+        expect(NewRelic::Agent).to have_received(:notice_error).with(a_kind_of(HTTP::TimeoutError))
       end
     end
 
     context "with error response" do
       it "returns 500" do
+        allow(NewRelic::Agent).to receive(:notice_error)
         stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/T1?format=json")
           .to_return(status: 500, body: "foo")
 
         get "/addresses/T1"
         expect(last_response.status).to eq 500
         expect(last_response.body).to eq "response error: 500 Internal Server Error: foo"
+        expect(NewRelic::Agent).to have_received(:notice_error).with(a_kind_of(HTTPError))
       end
     end
 
     context "with 404 response" do
       it "returns 404" do
+        allow(NewRelic::Agent).to receive(:notice_error)
         stub_request(:get, "https://ws.postcoder.com/pcw/#{api_key}/address/uk/T1?format=json")
           .to_return(status: 404, body: "foo")
 
         get "/addresses/T1"
         expect(last_response.status).to eq 500
         expect(last_response.body).to eq "response error: 404 Not Found: foo"
+        expect(NewRelic::Agent).to have_received(:notice_error).with(a_kind_of(HTTPError))
       end
     end
 
