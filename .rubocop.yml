@@ -1,11 +1,9 @@
-AllCops:
-  TargetRubyVersion: 2.5
+inherit_gem:
+  citizens-advice-style:
+    - default.yml
 
-Documentation:
+RSpec/MultipleExpectations:
   Enabled: false
 
-Metrics/LineLength:
-  Max: 90
-
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
+RSpec/ExampleLength:
+  Enabled: false

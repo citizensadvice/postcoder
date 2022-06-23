@@ -14,14 +14,18 @@ node("docker && awsaccess"){
     dockerImage = docker.build("citizensadvice/postcoder:${env.BUILD_TAG}")
   }
 
+  stage("lint"){
+    sh "docker-compose run -e POSTCODER_VERSION_TAG=:${env.BUILD_TAG} --rm app bundle exec rubocop"
+  }
+
   stage("test"){
-    sh "docker-compose run -e POSTCODER_VERSION_TAG=:${env.BUILD_TAG} --rm app bundle exec rspec"
+    sh "docker-compose run -e POSTCODER_VERSION_TAG=:${env.BUILD_TAG} -e APP_ENV=test --rm app bundle exec rspec"
   }
 
   stage("push"){
     if(isIntegrationBranch) {
       def dockerTag = "postcoder:${env.BUILD_TAG}"
-      sh "docker tag citizensadvice/postcoder:${env.BUILD_TAG} ${dockerTag}" 
+      sh "docker tag citizensadvice/postcoder:${env.BUILD_TAG} ${dockerTag}"
       dockerImage = docker.image(dockerTag)
       docker.withRegistry(dockerRegistryUrl, ecrCredentialId) {
         dockerImage.push()
