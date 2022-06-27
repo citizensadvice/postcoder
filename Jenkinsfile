@@ -11,7 +11,7 @@ node("docker && awsaccess"){
   checkout scm
 
   stage("build") {
-    dockerImage = docker.build("citizensadvice/postcoder:${env.BUILD_TAG}")
+    dockerImage = docker.build("postcoder:${env.BUILD_TAG}")
   }
 
   stage("lint"){
@@ -25,11 +25,11 @@ node("docker && awsaccess"){
   stage("push"){
     docker.withRegistry(dockerRegistryUrl, ecrCredentialId) {
       if (env.BRANCH_NAME == "main") {
-        echo "pushing to registry ${ecrRepoName}:latest"
+        echo "pushing to registry postcoder:latest"
         dockerImage.push("latest")
       }
       if (env.CHANGE_BRANCH ==~ /^v\d+((.\d+){0,2}(-[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*)?)?$/) {
-        echo "pushing to registry ${ecrRepoName}:${env.CHANGE_BRANCH}"
+        echo "pushing to registry postcoder:${env.CHANGE_BRANCH}"
         dockerImage.push(env.CHANGE_BRANCH)
       }
     }
