@@ -23,12 +23,14 @@ node("docker && awsaccess"){
   }
 
   stage("push"){
-    if(isIntegrationBranch) {
-      def dockerTag = "postcoder:${env.BUILD_TAG}"
-      sh "docker tag citizensadvice/postcoder:${env.BUILD_TAG} ${dockerTag}"
-      dockerImage = docker.image(dockerTag)
-      docker.withRegistry(dockerRegistryUrl, ecrCredentialId) {
-        dockerImage.push()
+    docker.withRegistry(dockerRegistryUrl, ecrCredentialId) {
+      if (env.BRANCH_NAME == "main") {
+        echo "pushing to registry ${ecrRepoName}:latest"
+        dockerImage.push("latest")
+      }
+      if (env.CHANGE_BRANCH ==~ /^v\d+((.\d+){0,2}(-[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*)?)?$/) {
+        echo "pushing to registry ${ecrRepoName}:${env.CHANGE_BRANCH}"
+        dockerImage.push(env.CHANGE_BRANCH)
       }
     }
   }
