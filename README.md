@@ -6,7 +6,7 @@ This service caches the results to save on credits
 
 ## API
 
-GET `http://example.com/addressses/{searchterm}`
+GET `http://example.com/addresses/{searchterm}`
 
 This will pass the search term to GET `https://ws.postcoder.com/pcw/{apikey}/address/uk/{searchterm}`
 
