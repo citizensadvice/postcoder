@@ -2,8 +2,17 @@
 
 require "sinatra"
 require "newrelic_rpm"
-require_relative "lib/cache"
-require_relative "lib/query"
+require "active_support/core_ext/object"
+require "active_support/core_ext/string"
+
+if ENV.fetch("MOCK_MODE", "false") == "true"
+  puts "Starting in MOCK_MODE"
+  require_relative "lib/mock_cache"
+  require_relative "lib/mock_query"
+else
+  require_relative "lib/cache"
+  require_relative "lib/query"
+end
 require_relative "lib/http_error"
 
 configure { set :server, :puma }

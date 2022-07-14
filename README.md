@@ -4,6 +4,8 @@ Find addresses using the [Allies postcoder service](https://postcoder.com/docs/a
 
 This service caches the results to save on credits
 
+This service can also operate in a MOCK mode if started with MOCK_MODE=true
+
 ## API
 
 GET `http://example.com/addressses/{searchterm}`
@@ -52,6 +54,14 @@ http://localhost:4001/pcw/PCW45-12345-12345-1234X/address/uk/E1
 docker-compose run --rm -e APP_ENV=test app bundle exec rspec
 ```
 
+### Mock mode
+
+Note that mock mode does not support the query options and always returns JSON.
+
+```
+MOCK_MODE=true docker-compose up
+```
+
 ### Configuration
 
 | Key name              | Description                                                                              |
@@ -61,3 +71,4 @@ docker-compose run --rm -e APP_ENV=test app bundle exec rspec
 | CACHE_URL             | The url for the Redis cache                                                              |
 | CACHE_TTL             | How long to cache a new entry (in seconds).  This is `2_592_000` (30 days) in production |
 | NEW_RELIC_LICENSE_KEY | NewRelic license key, only needed in cloud environments                                  |
+| MOCK                  | Operate in mock mode where responses are read from the file system                       |

@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "redis"
-require "active_support/core_ext/object"
 
 class Cache
   OPTIONS = {
