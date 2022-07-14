@@ -8,7 +8,7 @@ This service can also operate in a mock mode where no external calls are made.
 
 ## API
 
-GET `http://example.com/addressses/{searchterm}`
+GET `http://example.com/addresses/{searchterm}`
 
 This will pass the search term to GET `https://ws.postcoder.com/pcw/{apikey}/address/uk/{searchterm}`
 
