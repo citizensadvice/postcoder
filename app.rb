@@ -15,8 +15,6 @@ configure { set :server, :puma }
 
 puts "Starting in MOCK_MODE" if MockMode.enabled?
 
-puts Sinatra::Base.development?
-
 if Sinatra::Base.development?
   require "sinatra/reloader"
   require "debug"
