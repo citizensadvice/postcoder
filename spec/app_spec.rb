@@ -145,6 +145,33 @@ describe "App" do
         expect(Cache).not_to have_received(:set)
       end
     end
+
+    describe "mock mode" do
+      before do
+        allow(ENV).to receive(:fetch).and_call_original
+        allow(ENV).to receive(:fetch).with("MOCK_MODE", "false").and_return("true")
+      end
+
+      it "returns mock results from the file system" do
+        allow(Cache).to receive(:set)
+        get "/pcw/#{api_key}/address/uk/AB156JT"
+
+        expect(last_response.status).to eq 200
+        expect(last_response.headers["Content-Type"]).to include "json"
+        expect(last_response.body).to eq File.binread("mock_responses/ab156jt.json")
+        expect(Cache).not_to have_received(:set)
+      end
+
+      it "returns an empty array if unknown" do
+        allow(Cache).to receive(:set)
+        get "/pcw/#{api_key}/address/uk/xxx"
+
+        expect(last_response.status).to eq 200
+        expect(last_response.headers["Content-Type"]).to include "json"
+        expect(last_response.body).to eq "[]"
+        expect(Cache).not_to have_received(:set)
+      end
+    end
   end
 
   describe "/addresses/" do
@@ -277,6 +304,33 @@ describe "App" do
         allow(Cache).to receive(:set)
         get "/addresses/N2?refresh=true"
         expect(last_response.status).to eq 500
+        expect(Cache).not_to have_received(:set)
+      end
+    end
+
+    describe "mock mode" do
+      before do
+        allow(ENV).to receive(:fetch).and_call_original
+        allow(ENV).to receive(:fetch).with("MOCK_MODE", "false").and_return("true")
+      end
+
+      it "returns mock results from the file system" do
+        allow(Cache).to receive(:set)
+        get "/addresses/AB156JT"
+
+        expect(last_response.status).to eq 200
+        expect(last_response.headers["Content-Type"]).to include "json"
+        expect(last_response.body).to eq File.binread("mock_responses/ab156jt.json")
+        expect(Cache).not_to have_received(:set)
+      end
+
+      it "returns an empty array if unknown" do
+        allow(Cache).to receive(:set)
+        get "/addresses/xxx"
+
+        expect(last_response.status).to eq 200
+        expect(last_response.headers["Content-Type"]).to include "json"
+        expect(last_response.body).to eq "[]"
         expect(Cache).not_to have_received(:set)
       end
     end

@@ -5,20 +5,21 @@ require "newrelic_rpm"
 require "active_support/core_ext/object"
 require "active_support/core_ext/string"
 
-if ENV.fetch("MOCK_MODE", "false") == "true"
-  puts "Starting in MOCK_MODE"
-  require_relative "lib/mock_cache"
-  require_relative "lib/mock_query"
-else
-  require_relative "lib/cache"
-  require_relative "lib/query"
-end
+require_relative "lib/mock_mode"
+require_relative "lib/cache"
+require_relative "lib/query"
+require_relative "lib/mock_query"
 require_relative "lib/http_error"
 
 configure { set :server, :puma }
 
-if ENV.fetch("APP_ENV", "development") != "production"
+puts "Starting in MOCK_MODE" if MockMode.enabled?
+
+puts Sinatra::Base.development?
+
+if Sinatra::Base.development?
   require "sinatra/reloader"
+  require "debug"
   enable :reloader
 
   get "/flush" do
@@ -28,17 +29,23 @@ end
 
 # Deprecated
 get "/pcw/:api_key/address/uk/:postcode" do
+  halt 200, { "Content-Type" => "application/json" }, MockQuery.new(params).response if MockMode.enabled?
+
   valid_key? || halt(403)
   content_type query.options[:format]
   Cache.get(key) || Cache.set(key, value)
 end
 
 get "/addresses/:postcode" do
+  halt 200, { "Content-Type" => "application/json" }, MockQuery.new(params).response if MockMode.enabled?
+
   content_type query.options[:format].presence_in(%w[json xml]) || "json"
   (params[:refresh] == "true" ? nil : Cache.get(key)) || Cache.set(key, value)
 end
 
 get "/status" do
+  halt 200 if MockMode.enabled?
+
   Cache.get("_") # Test if Redis is connecting
   200
 end

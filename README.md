@@ -4,7 +4,7 @@ Find addresses using the [Allies postcoder service](https://postcoder.com/docs/a
 
 This service caches the results to save on credits
 
-This service can also operate in a MOCK mode if started with MOCK_MODE=true
+This service can also operate in a mock mode where no external calls are made.
 
 ## API
 
@@ -54,7 +54,16 @@ http://localhost:4001/pcw/PCW45-12345-12345-1234X/address/uk/E1
 docker-compose run --rm -e APP_ENV=test app bundle exec rspec
 ```
 
+## API key
+
+We have one API key used on production and the devops environment.
+
+The Allied test API key of PCW45-12345-12345-1234X always returns the same response.
+
 ### Mock mode
+
+Start in mock mode by supplying the ENV MOCK_MODE=true.  This reads responses from the file system and
+will not enabled Redis.
 
 Note that mock mode does not support the query options and always returns JSON.
 
