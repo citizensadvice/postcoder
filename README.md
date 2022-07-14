@@ -80,4 +80,4 @@ MOCK_MODE=true docker-compose up
 | CACHE_URL             | The url for the Redis cache                                                              |
 | CACHE_TTL             | How long to cache a new entry (in seconds).  This is `2_592_000` (30 days) in production |
 | NEW_RELIC_LICENSE_KEY | NewRelic license key, only needed in cloud environments                                  |
-| MOCK                  | Operate in mock mode where responses are read from the file system                       |
+| MOCK_MODE             | If "true", operate in mock mode where responses are read from the file system            |
