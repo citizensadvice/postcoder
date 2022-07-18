@@ -15,6 +15,7 @@ services:
       - API_KEY=${API_KEY:-PCW45-12345-12345-1234X}
       - CACHE_URL=redis://cache:6379/1
       - CACHE_TTL=2_592_000
+      - MOCK_MODE=${MOCK_MODE:-false}
 
   cache:
     image: redis:5.0.14-alpine3.16

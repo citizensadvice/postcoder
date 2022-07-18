@@ -1,17 +1,16 @@
 # frozen_string_literal: true
 
 require "redis"
-require "active_support/core_ext/object"
 
 class Cache
   OPTIONS = {
     timeout: 1,
     namespace: "postcoder",
-    url: ENV.fetch("CACHE_URL"),
-    ttl: ENV.fetch("CACHE_TTL").to_i
+    url: ENV.fetch("CACHE_URL", "redis://localhost:6379"),
+    ttl: ENV.fetch("CACHE_TTL", "86_400").to_i
   }.freeze
 
-  REDIS = Redis.new(OPTIONS)
+  REDIS = MockMode.enabled? ? false : Redis.new(OPTIONS)
   private_constant :REDIS
 
   class << self

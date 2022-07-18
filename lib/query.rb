@@ -11,7 +11,7 @@ class Query
   # https://developers.alliescomputing.com/postcoder-web-api/address-lookup
   ALLOWABLE_OPTIONS = %i[format lines page include exclude callback alias addtags].freeze
   API_ORIGIN = "https://ws.postcoder.com"
-  API_KEY = ENV.fetch("API_KEY")
+  API_KEY = ENV.fetch("API_KEY", "PCW45-12345-12345-1234X")
 
   DEFAULT_OPTIONS = Sinatra::IndifferentHash.new.merge(format: "json")
 
