@@ -16,12 +16,6 @@ The query options `format`, `line`, `page`, `include`, `exclude`, `callback`, `a
 
 If the query option `refresh=true` is provided the cache will be skipped and updated, _for that request_.
 
-### Deprecated endpoint
-
-The older verbose endpoint should no longer be used and will be removed in the future.
-
-GET `http://example.com/pcw/{apikey}/address/uk/{searchterm}`
-
 ## Build
 
 ```
@@ -70,6 +64,8 @@ Note that mock mode does not support the query options and always returns JSON.
 ```
 MOCK_MODE=true docker-compose up
 ```
+
+If running mock mode you probably want to set `NEW_RELIC_AGENT_ENABLED=false` and `WEB_CONCURRENCY=0`. 
 
 ### Configuration
 

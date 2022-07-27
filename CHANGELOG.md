@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.0.0 _27 July 2022_
+
+- Removed the deprecated `/pcw/:api_key...` endpoint
+
 ## v3.0.0 _14 July 2022_
 
 - Added a mock mode enabled by MOCK_MODE=true
