@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.0.1 _2 August 2022_
+
+- Create arm64 compatible image
+
 ## v4.0.0 _27 July 2022_
 
 - Removed the deprecated `/pcw/:api_key...` endpoint
