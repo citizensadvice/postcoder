@@ -25,15 +25,6 @@ if Sinatra::Base.development?
   end
 end
 
-# Deprecated
-get "/pcw/:api_key/address/uk/:postcode" do
-  halt 200, { "Content-Type" => "application/json" }, MockQuery.new(params).response if MockMode.enabled?
-
-  valid_key? || halt(403)
-  content_type query.options[:format]
-  Cache.get(key) || Cache.set(key, value)
-end
-
 get "/addresses/:postcode" do
   halt 200, { "Content-Type" => "application/json" }, MockQuery.new(params).response if MockMode.enabled?
 
