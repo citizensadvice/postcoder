@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.0.2 _12 August 2022_
+
+- Fix arm64 compaible image missing platforms in Gemfile.lock
+
 ## v4.0.1 _2 August 2022_
 
 - Create arm64 compatible image
