@@ -28,7 +28,7 @@ jobs:
           username: ${{ secrets.PUBLIC_PUSH_ECR_AWS_KEY }}
           password: ${{ secrets.PUBLIC_PUSH_ECR_AWS_SECRET }}
         env:
-          AWS_REGION: eu-west-1
+          AWS_REGION: us-east-1
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
