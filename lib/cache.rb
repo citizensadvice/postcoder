@@ -5,7 +5,7 @@ require_relative "application_logger"
 
 class Cache
   OPTIONS = {
-    connect_timeout: 0.5,
+    connect_timeout: 0.3,
     url: ENV.fetch("CACHE_URL", "redis://localhost:6379")
   }.freeze
   TTL = ENV.fetch("CACHE_TTL", "86_400").to_i
