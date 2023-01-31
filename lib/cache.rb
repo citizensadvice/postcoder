@@ -1,15 +1,14 @@
 # frozen_string_literal: true
 
 require "redis"
+require_relative "application_logger"
 
 class Cache
   OPTIONS = {
-    timeout: 1,
-    namespace: "postcoder",
-    url: ENV.fetch("CACHE_URL", "redis://localhost:6379"),
-    ttl: ENV.fetch("CACHE_TTL", "86_400").to_i
+    connect_timeout: 0.5,
+    url: ENV.fetch("CACHE_URL", "redis://localhost:6379")
   }.freeze
-
+  TTL = ENV.fetch("CACHE_TTL", "86_400").to_i
   REDIS = MockMode.enabled? ? false : Redis.new(OPTIONS)
   private_constant :REDIS
 
@@ -18,14 +17,16 @@ class Cache
       REDIS.get expand_cache_key(key)
     rescue Redis::CannotConnectError => e
       NewRelic::Agent.notice_error(e)
+      LOGGER.error(e)
       nil
     end
 
     def set(key, value)
-      REDIS.setex(expand_cache_key(key), OPTIONS[:ttl], value) if value.present?
+      REDIS.setex(expand_cache_key(key), TTL, value) if value.present?
       value
     rescue Redis::CannotConnectError => e
       NewRelic::Agent.notice_error(e)
+      LOGGER.error(e)
       value
     end
 

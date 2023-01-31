@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+ENV["APP_ENV"] = "test"
+
 require "debug"
 require "rack/test"
 require "rspec"
@@ -15,7 +17,7 @@ module RSpecMixin
   end
 
   def api_key
-    ENV.fetch("API_KEY")
+    ENV.fetch("API_KEY", "PCW45-12345-12345-1234X")
   end
 
   def read_json(filename)
@@ -25,4 +27,8 @@ end
 
 RSpec.configure do |config|
   config.include RSpecMixin
+  config.before do
+    # Prevent the logger spamming the logs
+    stub_const("LOGGER", Logger.new(IO::NULL))
+  end
 end

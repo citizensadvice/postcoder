@@ -40,11 +40,15 @@ docker run
 citizensadvice/postcoder
 ```
 
-http://localhost:4001/pcw/PCW45-12345-12345-1234X/address/uk/E1
+http://localhost:4001/addresses/E1
 
 ### Testing
 
 ```
+bundle exec rubocop
+bundle exec rspec
+
+# Or using docker
 docker-compose run --rm -e APP_ENV=test app bundle exec rspec
 ```
 

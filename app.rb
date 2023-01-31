@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
 require "sinatra"
+require "sinatra/custom_logger"
 require "newrelic_rpm"
 require "active_support/core_ext/object"
 require "active_support/core_ext/string"
 
+require_relative "lib/application_logger"
 require_relative "lib/mock_mode"
 require_relative "lib/cache"
 require_relative "lib/query"
@@ -24,6 +26,8 @@ if Sinatra::Base.development?
     Cache.flush
   end
 end
+
+set :logger, LOGGER
 
 get "/addresses/:postcode" do
   halt 200, { "Content-Type" => "application/json" }, MockQuery.new(params).response if MockMode.enabled?

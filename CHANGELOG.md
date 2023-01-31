@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v4.0.3 _31 January 2023_
+
+- Reduced the connect timeout on Redis so returns are more responsive without redis
+- Updated to Ruby 3.2.0
+
 ## v4.0.2 _12 August 2022_
 
 - Fix arm64 compaible image missing platforms in Gemfile.lock
