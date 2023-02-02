@@ -8,7 +8,7 @@ describe Cache do
 
   describe ".get" do
     it "retrieves the cache" do
-      allow(redis).to receive(:get).with("postcoder/key").and_return("value")
+      allow(redis).to receive(:get).with("/key").and_return("value")
       expect(described_class.get("key")).to eq "value"
     end
 
