@@ -36,4 +36,5 @@ jobs:
           aws_secret_key: ${{ secrets.PUBLIC_PUSH_ECR_AWS_SECRET }}
           dockerfile_context: '.'
           repository_name: postcoder
+          multiarch_build: 'enabled'
           auth_token: ${{ secrets.GITHUB_TOKEN }}
