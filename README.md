@@ -79,7 +79,6 @@ If running mock mode you probably want to set `NEW_RELIC_AGENT_ENABLED=false` an
 | API_KEY                 | The API key for the Postcoder web service                                                |
 | CACHE_URL               | The url for the Redis cache                                                              |
 | CACHE_TTL               | How long to cache a new entry (in seconds).  This is `2_592_000` (30 days) in production |
-| NEW_RELIC_LICENSE_KEY   | NewRelic license key, only needed in cloud environments                                  |
-| NEW_RELIC_AGENT_ENABLED | Set to `false` if New Relic is not required                                              |
+| NEW_RELIC_LICENSE_KEY   | If provided, New Relic will be enabled                                                   |
 | MOCK_MODE               | If `true`, operate in mock mode where responses are read from the file system            |
 | WEB_CONCURRENCY         | Set to `0` if running locally for a tiny performance boost                               |

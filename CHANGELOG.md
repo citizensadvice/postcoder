@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v4.1.0 _13 February 2023_
+
+- Added a version endpoint
+- New Relic now defaults to off
+- Updated to Ruby 3.2.1 and alpine 3.17
+
 ## v4.0.3 _31 January 2023_
 
 - Reduced the connect timeout on Redis so returns are more responsive without redis

@@ -10,6 +10,14 @@ describe "App" do
     end
   end
 
+  describe "/version" do
+    it "returns the version" do
+      get "/version"
+      expect(last_response).to be_ok
+      expect(last_response.body).to eq VERSION
+    end
+  end
+
   describe "/addresses/" do
     let(:endpoint) { "/addresses/E1" }
 
