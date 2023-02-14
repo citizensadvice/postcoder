@@ -25,38 +25,16 @@ jobs:
           docker-compose run -e APP_ENV=test --rm app bundle exec rspec
 
   build:
-    runs-on: ubuntu-latest
+    name: Publish image
+    runs-on: ubuntu-22.04
+    needs: test
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Extract repo name
-      shell: bash
-      run: echo "##[set-output name=repo_name;]$(echo ${GITHUB_REPOSITORY} | sed "s/.*\///g" | sed "s/-docker$//")"
-      id: extract_repo_name
-    - name: Docker meta
-      id: docker_meta
-      uses: crazy-max/ghaction-docker-meta@v1
-      with:
-        images: public.ecr.aws/citizensadvice/${{ steps.extract_repo_name.outputs.repo_name }}
-        tag-sha: true
-    - name: Login to AWS Elastic Container Registry
-      uses: docker/login-action@v1
-      with:
-        registry: public.ecr.aws
-        username: ${{ secrets.PUBLIC_PUSH_ECR_AWS_KEY }}
-        password: ${{ secrets.PUBLIC_PUSH_ECR_AWS_SECRET }}
-      env:
-        AWS_REGION: us-east-1
-    - name: Set up QEMU
-      uses: docker/setup-qemu-action@v2
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v2
-    - name: Build and push
-      id: docker_build
-      uses: docker/build-push-action@v3
-      with:
-        context: .
-        push: true
-        platforms: linux/amd64,linux/arm64
-        tags: ${{ steps.docker_meta.outputs.tags }}
-        labels: ${{ steps.docker_meta.outputs.labels }}
+      - name: Build and push to ECR
+        uses: citizensadvice/build-and-push-action@v1
+        with:
+          aws_access_key: ${{ secrets.PUBLIC_PUSH_ECR_AWS_KEY }}
+          aws_secret_key: ${{ secrets.PUBLIC_PUSH_ECR_AWS_SECRET }}
+          dockerfile_context: '.'
+          repository_name: postcoder
+          multiarch_build: 'enabled'
+          auth_token: ${{ secrets.GITHUB_TOKEN }}

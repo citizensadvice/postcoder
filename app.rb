@@ -6,6 +6,7 @@ require "newrelic_rpm"
 require "active_support/core_ext/object"
 require "active_support/core_ext/string"
 
+require_relative "lib/version"
 require_relative "lib/application_logger"
 require_relative "lib/mock_mode"
 require_relative "lib/cache"
@@ -41,6 +42,10 @@ get "/status" do
 
   Cache.get("_") # Test if Redis is connecting
   200
+end
+
+get "/version" do
+  VERSION
 end
 
 private
