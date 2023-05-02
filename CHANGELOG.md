@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v4.2.0 _24 April 2023_
+
+- Added additional postcodes to the mock responses
+- Updated to Ruby 3.2.2
+
 ## v4.1.0 _13 February 2023_
 
 - Added a version endpoint
