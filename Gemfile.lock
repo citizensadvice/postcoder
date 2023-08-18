@@ -61,7 +61,7 @@ GEM
     parser (3.2.2.1)
       ast (~> 2.4.1)
     public_suffix (5.0.1)
-    puma (6.2.2)
+    puma (6.3.1)
       nio4r (~> 2.0)
     rack (2.2.6.4)
     rack-protection (3.0.6)
@@ -142,6 +142,7 @@ PLATFORMS
   arm64-darwin-21
   x86_64-darwin-21
   x86_64-darwin-22
+  x86_64-linux
   x86_64-linux-musl
 
 DEPENDENCIES
