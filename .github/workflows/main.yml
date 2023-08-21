@@ -6,8 +6,6 @@ on:
       - main
       - "[0-9]*"
       - "v[0-9]*"
-    tags:
-      - v*
 jobs:
   test:
     runs-on: ubuntu-latest
