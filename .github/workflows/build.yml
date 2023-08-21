@@ -1,0 +1,27 @@
+name: Publish to ECR
+
+on:
+  workflow_run:
+    workflows: [test]
+    types:
+      - completed
+
+  push:
+    branches:
+      - main
+      - "[0-9]*"
+
+jobs:
+  build:
+    name: Publish image
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Build and push to ECR
+        uses: citizensadvice/build-and-push-action@v1
+        with:
+          aws_access_key: ${{ secrets.PUBLIC_PUSH_ECR_AWS_KEY }}
+          aws_secret_key: ${{ secrets.PUBLIC_PUSH_ECR_AWS_SECRET }}
+          dockerfile_context: '.'
+          repository_name: postcoder
+          multiarch_build: 'enabled'
+          auth_token: ${{ secrets.GITHUB_TOKEN }}
