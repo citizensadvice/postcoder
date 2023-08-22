@@ -1,33 +1,20 @@
-name: Build and publish to public ECR
+name: Publish to ECR
 
 on:
+  workflow_run:
+    workflows: [test]
+    types:
+      - completed
+
   push:
     branches:
       - main
       - "[0-9]*"
-      - "v[0-9]*"
-    tags:
-      - v*
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Git Checkout
-        uses: actions/checkout@v3
-      - name: Build
-        run: |
-          docker build -t postcoder .
-      - name: Lint
-        run: |
-          docker-compose run --rm app bundle exec rubocop
-      - name: Test
-        run: |
-          docker-compose run -e APP_ENV=test --rm app bundle exec rspec
 
-  build:
+jobs:
+  publish:
     name: Publish image
     runs-on: ubuntu-22.04
-    needs: test
     steps:
       - name: Build and push to ECR
         uses: citizensadvice/build-and-push-action@v1
