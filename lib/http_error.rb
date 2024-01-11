@@ -2,6 +2,6 @@
 
 class HTTPError < StandardError
   def initialize(response)
-    super "response error: #{response.status}: #{response.body}"
+    super("response error: #{response.status}: #{response.body}")
   end
 end

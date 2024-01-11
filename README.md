@@ -60,7 +60,7 @@ The Allied test API key of PCW45-12345-12345-1234X always returns the same respo
 
 ### Mock mode
 
-Start in mock mode by supplying the ENV MOCK_MODE=true.  This reads responses from the file system and
+Start in mock mode by supplying the ENV MOCK_MODE=true. This reads responses from the file system and
 will not enabled Redis.
 
 Note that mock mode does not support the query options and always returns JSON.
@@ -69,16 +69,16 @@ Note that mock mode does not support the query options and always returns JSON.
 MOCK_MODE=true docker-compose up
 ```
 
-If running mock mode you probably want to set `NEW_RELIC_AGENT_ENABLED=false` and `WEB_CONCURRENCY=0`. 
+If running mock mode you probably want to set `NEW_RELIC_AGENT_ENABLED=false` and `WEB_CONCURRENCY=0`.
 
 ### Configuration
 
-| Key name                | Description                                                                              |
-| ---                     | ---                                                                                      |
-| APP_ENV                 | The app environment. This should be set to production on all AWS environments            |
-| API_KEY                 | The API key for the Postcoder web service                                                |
-| CACHE_URL               | The url for the Redis cache                                                              |
-| CACHE_TTL               | How long to cache a new entry (in seconds).  This is `2_592_000` (30 days) in production |
-| NEW_RELIC_LICENSE_KEY   | If provided, New Relic will be enabled                                                   |
-| MOCK_MODE               | If `true`, operate in mock mode where responses are read from the file system            |
-| WEB_CONCURRENCY         | Set to `0` if running locally for a tiny performance boost                               |
+| Key name              | Description                                                                             |
+| --------------------- | --------------------------------------------------------------------------------------- |
+| APP_ENV               | The app environment. This should be set to production on all AWS environments           |
+| API_KEY               | The API key for the Postcoder web service                                               |
+| CACHE_URL             | The url for the Redis cache                                                             |
+| CACHE_TTL             | How long to cache a new entry (in seconds). This is `2_592_000` (30 days) in production |
+| NEW_RELIC_LICENSE_KEY | If provided, New Relic will be enabled                                                  |
+| MOCK_MODE             | If `true`, operate in mock mode where responses are read from the file system           |
+| WEB_CONCURRENCY       | Set to `0` if running locally for a tiny performance boost                              |

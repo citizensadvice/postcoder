@@ -3,6 +3,7 @@
 require "sinatra"
 require "sinatra/custom_logger"
 require "newrelic_rpm"
+require "active_support"
 require "active_support/core_ext/object"
 require "active_support/core_ext/string"
 

@@ -1,4 +1,4 @@
-FROM ruby:3.2.2-alpine3.17 AS builder
+FROM ruby:3.3.0-alpine3.19 AS builder
 
 ENV APP_HOME /app
 ENV LANG C.UTF-8
@@ -15,10 +15,11 @@ RUN bundle install && \
 
 #################################################
 
-FROM ruby:3.2.2-alpine3.17
+FROM ruby:3.3.0-alpine3.19
 
 ENV APP_ROOT /app
 ENV RACK_ENV=production
+ENV RUBY_YJIT_ENABLE=1
 
 COPY --from=builder /usr/local/bundle/ /usr/local/bundle/
 
