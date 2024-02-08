@@ -10,6 +10,7 @@ gem "sinatra-contrib", require: false
 gem "activesupport"
 gem "http"
 gem "puma"
+gem "rackup"
 gem "redis"
 
 gem "newrelic_rpm"
