@@ -4,7 +4,7 @@ require "newrelic_rpm"
 require_relative "../lib/cache"
 
 describe Cache do
-  let(:redis) { described_class.const_get("REDIS") }
+  let(:redis) { described_class.const_get(:REDIS) }
 
   describe ".get" do
     it "retrieves the cache" do

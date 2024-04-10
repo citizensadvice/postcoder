@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.3.1 _29 February 2024_
+
+- Rack security fixes
+
 ## v4.3.0 _11 January 2024_
 
 - Update to Ruby 3.3.0
