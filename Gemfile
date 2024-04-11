@@ -16,7 +16,7 @@ gem "redis"
 gem "newrelic_rpm"
 
 group :development do
-  gem "citizens-advice-style", github: "citizensadvice/citizens-advice-style-ruby", tag: "v10.0.1"
+  gem "citizens-advice-style", github: "citizensadvice/citizens-advice-style-ruby", tag: "v11.0.0"
   gem "debug"
   gem "rack-test"
   gem "rspec"
