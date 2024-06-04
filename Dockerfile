@@ -1,4 +1,4 @@
-FROM ruby:3.3.0-alpine3.19 AS builder
+FROM ruby:3.3.2-alpine3.20 AS builder
 
 ENV APP_HOME /app
 ENV LANG C.UTF-8
@@ -15,7 +15,7 @@ RUN bundle install && \
 
 #################################################
 
-FROM ruby:3.3.0-alpine3.19
+FROM ruby:3.3.2-alpine3.20
 
 ENV APP_ROOT /app
 ENV RACK_ENV=production
