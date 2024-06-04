@@ -2,7 +2,9 @@
 
 ## v4.3.2 _4 June 2024_
 
-- Ruby 3.3.2 and gem updates
+- Ruby 3.3.2
+- Alpine 20
+- Gem updates
 
 ## v4.3.1 _29 February 2024_
 
