@@ -27,7 +27,7 @@ docker build -t citizensadvice/postcoder .
 Optionally create a .env file with the real `API_KEY`.
 
 ```
-docker-compose up
+docker compose up
 ```
 
 ```

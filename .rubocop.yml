@@ -2,10 +2,6 @@ inherit_gem:
   citizens-advice-style:
     - default.yml
 
-# Not a Rails project
-RSpecRails:
-  Enabled: false
-
 RSpec/MultipleExpectations:
   Enabled: false
 
