@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v4.3.4 _29 July 2025_
+
+- Ruby 3.4.5
+- Gem updates
+
 ## v4.3.3 _6 May 2025_
 
 - Ruby 3.4.3
