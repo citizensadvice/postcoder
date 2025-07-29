@@ -27,7 +27,7 @@ docker build -t citizensadvice/postcoder .
 Optionally create a .env file with the real `API_KEY`.
 
 ```
-docker-compose up
+docker compose up
 ```
 
 ```
@@ -49,7 +49,7 @@ bundle exec rubocop
 bundle exec rspec
 
 # Or using docker
-docker-compose run --rm -e APP_ENV=test app bundle exec rspec
+docker compose run --rm -e APP_ENV=test app bundle exec rspec
 ```
 
 ## API key
@@ -66,7 +66,7 @@ will not enabled Redis.
 Note that mock mode does not support the query options and always returns JSON.
 
 ```
-MOCK_MODE=true docker-compose up
+MOCK_MODE=true docker compose up
 ```
 
 If running mock mode you probably want to set `NEW_RELIC_AGENT_ENABLED=false` and `WEB_CONCURRENCY=0`.

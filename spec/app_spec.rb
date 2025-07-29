@@ -89,7 +89,7 @@ describe "App" do
         stub_request(:get, %r{https://ws\.postcoder\.com/}).to_return(status: 200, body: read_json("E1"))
         allow(Cache).to receive(:get)
         get "/addresses/E1?format=xml&lines=1&invalid=key"
-        expect(Cache).to have_received(:get).with('E1/{"format"=>"xml", "lines"=>"1"}')
+        expect(Cache).to have_received(:get).with('E1/{"format" => "xml", "lines" => "1"}')
         expect(last_response).to be_ok
       end
 
@@ -97,7 +97,7 @@ describe "App" do
         stub_request(:get, %r{https://ws\.postcoder\.com/}).to_return(status: 200, body: read_json("E1"))
         allow(Cache).to receive(:get)
         get "/addresses/E1%203AH"
-        expect(Cache).to have_received(:get).with('E1 3AH/{"format"=>"json"}')
+        expect(Cache).to have_received(:get).with('E1 3AH/{"format" => "json"}')
         expect(last_response).to be_ok
       end
 
@@ -105,7 +105,7 @@ describe "App" do
         stub_request(:get, %r{https://ws\.postcoder\.com/}).to_return(status: 200, body: read_json("E1"))
         allow(Cache).to receive(:get)
         get "/addresses/E1%20%20%203AH%20"
-        expect(Cache).to have_received(:get).with('E1 3AH/{"format"=>"json"}')
+        expect(Cache).to have_received(:get).with('E1 3AH/{"format" => "json"}')
         expect(last_response).to be_ok
       end
 
@@ -113,7 +113,7 @@ describe "App" do
         stub_request(:get, %r{https://ws\.postcoder\.com/}).to_return(status: 200, body: read_json("E1"))
         allow(Cache).to receive(:get)
         get "/addresses/e1%203ah"
-        expect(Cache).to have_received(:get).with('E1 3AH/{"format"=>"json"}')
+        expect(Cache).to have_received(:get).with('E1 3AH/{"format" => "json"}')
         expect(last_response).to be_ok
       end
 
@@ -129,7 +129,7 @@ describe "App" do
         allow(Cache).to receive(:set)
         get "/addresses/N2"
         expect(last_response).to be_ok
-        expect(Cache).to have_received(:get).once.with('N2/{"format"=>"json"}')
+        expect(Cache).to have_received(:get).once.with('N2/{"format" => "json"}')
         expect(Cache).to have_received(:set).once
       end
 

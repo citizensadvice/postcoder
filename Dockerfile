@@ -1,9 +1,9 @@
-FROM ruby:3.3.2-alpine3.20 AS builder
+FROM ruby:3.4.3-alpine3.21 AS builder
 
-ENV APP_HOME /app
-ENV LANG C.UTF-8
+ENV APP_HOME=/app
+ENV LANG=C.UTF-8
 
-RUN apk add --update --no-cache build-base git
+RUN apk add --update --no-cache build-base git yaml-dev
 
 WORKDIR $APP_HOME
 COPY Gemfile* /app/
@@ -15,9 +15,9 @@ RUN bundle install && \
 
 #################################################
 
-FROM ruby:3.3.2-alpine3.20
+FROM ruby:3.4.3-alpine3.21
 
-ENV APP_ROOT /app
+ENV APP_ROOT=/app
 ENV RACK_ENV=production
 ENV RUBY_YJIT_ENABLE=1
 

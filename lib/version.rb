@@ -1,3 +1,3 @@
 # frozen_string_literal: true
 
-VERSION = "4.3.2"
+VERSION = "4.3.3"
