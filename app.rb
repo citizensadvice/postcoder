@@ -49,8 +49,6 @@ get "/version" do
   VERSION
 end
 
-private
-
 def valid_key?
   params[:api_key] == Query::API_KEY
 end
