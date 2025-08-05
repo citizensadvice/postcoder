@@ -38,6 +38,20 @@ get "/addresses/:postcode" do
   (params[:refresh] == "true" ? nil : Cache.get(key)) || Cache.set(key, value)
 end
 
+get "/autocomplete/find" do
+  halt 200, { "Content-Type" => "application/json" }, MockQuery.new(params).response if MockMode.enabled?
+
+  content_type query.options[:format].presence_in(%w[json xml]) || "json"
+  (params[:refresh] == "true" ? nil : Cache.get(key)) || Cache.set(key, value)
+end
+
+get "/autocomplete/retrieve" do
+  halt 200, { "Content-Type" => "application/json" }, MockQuery.new(params).response if MockMode.enabled?
+
+  content_type query.options[:format].presence_in(%w[json xml]) || "json"
+  (params[:refresh] == "true" ? nil : Cache.get(key)) || Cache.set(key, value)
+end
+
 get "/status" do
   halt 200 if MockMode.enabled?
 
