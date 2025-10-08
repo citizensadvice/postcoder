@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v4.3.3 _8 October 2025_
+
+- Ruby 3.4.6
+- Alpine 22
+- Gem updates
+
 ## v4.3.5 _29 July 2025_
 
 - Gem updates
