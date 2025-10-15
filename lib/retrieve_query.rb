@@ -7,18 +7,16 @@ require "addressable/template"
 require_relative "query"
 
 class RetrieveQuery
-  attr_reader :search, :id, :options
+  attr_reader :query, :id, :options
 
   # https://developers.alliescomputing.com/postcoder-web-api/address-lookup
-  ALLOWABLE_OPTIONS = %i[format lines page include exclude callback alias addtags].freeze
+  ALLOWABLE_OPTIONS = %i[id country query apikey format lines page include exclude callback alias addtags].freeze
   API_ORIGIN = "https://ws.postcoder.com"
   API_KEY = ENV.fetch("API_KEY", "PCW45-12345-12345-1234X")
 
-  DEFAULT_OPTIONS = Sinatra::IndifferentHash.new.merge(format: "json")
+  DEFAULT_OPTIONS = Sinatra::IndifferentHash.new.merge(format: "json", country: "uk", apikey: API_KEY)
 
   def initialize(params)
-    @id = params[:id]
-    @search = params[:search].squish.upcase
     @options = DEFAULT_OPTIONS.merge(params).slice(*ALLOWABLE_OPTIONS)
   end
 
@@ -33,8 +31,8 @@ class RetrieveQuery
   # The id will be of a type 'ADD' that has been returned in the find query.
   def endpoint
     Addressable::Template
-      .new("#{API_ORIGIN}/pcw/autocomplete/retrieve/?id={id}&query={search}&country=uk&apikey=#{API_KEY}")
-      .expand(search:, id:)
+      .new("#{API_ORIGIN}/pcw/autocomplete/retrieve/?")
+      .expand(query:, id:)
       .to_s
   end
 end

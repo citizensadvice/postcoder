@@ -40,7 +40,7 @@ get "/addresses/:postcode" do
   (params[:refresh] == "true" ? nil : Cache.get(key)) || Cache.set(key, value)
 end
 
-get "/find-addresses/:search" do
+get "/find-addresses/:query" do
   halt 200, { "Content-Type" => "application/json" }, MockQuery.new(params).response if MockMode.enabled?
   content_type find_query.options[:format].presence_in(%w[json xml]) || "json"
   find_query_response.body.to_s
