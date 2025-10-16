@@ -15,6 +15,8 @@ require_relative "lib/query"
 require_relative "lib/find_query"
 require_relative "lib/retrieve_query"
 require_relative "lib/mock_query"
+require_relative "lib/mock_find_query"
+require_relative "lib/mock_retrieve_query"
 require_relative "lib/http_error"
 
 configure { set :server, :puma }
@@ -41,13 +43,13 @@ get "/addresses/:postcode" do
 end
 
 get "/find-addresses/:query" do
-  halt 200, { "Content-Type" => "application/json" }, MockQuery.new(params).response if MockMode.enabled?
+  halt 200, { "Content-Type" => "application/json" }, MockFindQuery.new(params).response if MockMode.enabled?
   content_type find_query.options[:format].presence_in(%w[json xml]) || "json"
   find_query_response.body.to_s
 end
 
 get "/retrieve-address/:id" do
-  halt 200, { "Content-Type" => "application/json" }, MockQuery.new(params).response if MockMode.enabled?
+  halt 200, { "Content-Type" => "application/json" }, MockRetrieveQuery.new(params).response if MockMode.enabled?
   content_type retrieve_query.options[:format].presence_in(%w[json xml]) || "json"
   retrieve_query_response.body.to_s
 end
