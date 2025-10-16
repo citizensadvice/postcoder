@@ -1,0 +1,212 @@
+[
+  {
+    "id": "UK@STATE|Merseyside@CTY|{Newton-Le-Willows@LOC,WA@PCDA,WA12@PCDD}@LOC",
+    "type": "LOC",
+    "summaryline": "Newton-Le-Willows, WA12",
+    "locationsummary": "Merseyside",
+    "count": 13044
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Bretton Avenue@STR,WA1-2GP@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Bretton Avenue, WA1 2GP",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 50
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Dutton Court@STR,WA1-2BE@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Dutton Court, WA1 2BE",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 64
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Hucklow Drive@STR,WA1-2GU@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Hucklow Drive, WA1 2GU",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 56
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Kerridge Drive@STR,WA1-2GW@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Kerridge Drive, WA1 2GW",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 81
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Riverside Close@STR,WA1-2JD@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Riverside Close, WA1 2JD",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 67
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Time Square@STR,WA1-2NT@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Time Square, WA1 2NT",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 134
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Academy Street@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Academy Street, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 152
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Bridge Street@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Bridge Street, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 117
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Buttermarket Street@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Buttermarket Street, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 75
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Church Street@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Church Street, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 72
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Fairclough Avenue@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Fairclough Avenue, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 67
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Farrell Street@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Farrell Street, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 73
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Holywell Drive@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Holywell Drive, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 128
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Lintott Gardens@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Lintott Gardens, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 91
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Lord Nelson Street@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Lord Nelson Street, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 65
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Mersey Street@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Mersey Street, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 129
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Parr Street@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Parr Street, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 58
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{St. Elphins Close@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "St. Elphins Close, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 88
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{St. Katherines Way@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "St. Katherines Way, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 117
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Wellington Street@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Wellington Street, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 83
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Wharf Street@STR,WA1@PCDD,WA1-2@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Wharf Street, WA1 2",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 60
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Castleton Drive@STR,WA1-2GQ@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Castleton Drive, WA1 2GQ",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 19
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Cleeves Close@STR,WA1-2JH@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Cleeves Close, WA1 2JH",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 31
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{College Close@STR,WA1-2EG@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "College Close, WA1 2EG",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 24
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Colling Court@STR,WA1-2FZ@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Colling Court, WA1 2FZ",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 17
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Dial Street@STR,WA1-2NX@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Dial Street, WA1 2NX",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 45
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Edale Close@STR,WA1-2GR@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Edale Close, WA1 2GR",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 17
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Egerton Street@STR,WA1-2DF@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Egerton Street, WA1 2DF",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 16
+  },
+  {
+    "id": "UK@STATE|Cheshire@CTY|{Warrington@LOC,WA@PCDA}@LOC|{Glossop Close@STR,WA1-2GS@PCD,WA1-2@PCDS,WA1@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Glossop Close, WA1 2GS",
+    "locationsummary": "Warrington, Cheshire",
+    "count": 31
+  }
+]

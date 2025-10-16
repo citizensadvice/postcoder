@@ -4,7 +4,6 @@ require "http"
 require "sinatra/indifferent_hash"
 require "active_support/core_ext/string"
 require "addressable/template"
-require_relative "query"
 
 class FindQuery
   attr_reader :options, :pathfilter
