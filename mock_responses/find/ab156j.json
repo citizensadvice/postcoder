@@ -1,0 +1,135 @@
+[
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Denwood@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JF@PCD,2\\, 12-56@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "2, 12-56, Denwood, AB15 6JF",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 68
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Denwood@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JE@PCD,21-71@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "21-71 Denwood, AB15 6JE",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 26
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Eday Crescent@STR,AB15-6JR@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Eday Crescent, AB15 6JR",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 46
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Eday Drive@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JQ@PCD,2-24@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "2-24 Eday Drive, AB15 6JQ",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 12
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Eday Drive@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JX@PCD,26-60@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "26-60 Eday Drive, AB15 6JX",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 18
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Eday Road@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JH@PCD,1-27@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "1-27 Eday Road, AB15 6JH",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 14
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Eday Road@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JP@PCD,36-84@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "36-84 Eday Road, AB15 6JP",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 25
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Fernielea Crescent@STR,AB15-6JN@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Fernielea Crescent, AB15 6JN",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 18
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Fernielea Place@STR,AB15-6JW@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Fernielea Place, AB15 6JW",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 10
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Fernielea Road@STR,AB15-6JU@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Fernielea Road, AB15 6JU",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 14
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Gairsay Drive@STR,AB15-6JS@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Gairsay Drive, AB15 6JS",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 27
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Gairsay Road@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JT@PCD,20-78@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "20-78 Gairsay Road, AB15 6JT",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 30
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Gairsay Road@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JY@PCD,27-51@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "27-51 Gairsay Road, AB15 6JY",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 13
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Stronsay Drive@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JJ@PCD,21-71@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "21-71 Stronsay Drive, AB15 6JJ",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 26
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Stronsay Drive@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JD@PCD,62-132@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "62-132 Stronsay Drive, AB15 6JD",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 36
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Stronsay Drive@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JB@PCD,134-192@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "134-192 Stronsay Drive, AB15 6JB",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 30
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Eday Road@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JG@PCD,29-35@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "29-35 Eday Road, AB15 6JG",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 4
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Gairsay Road@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JZ@PCD,13-25@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "13-25 Gairsay Road, AB15 6JZ",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 7
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Stronsay Drive@STR,AB15@PCDD,AB15-6@PCDS}@STR|{AB15-6JL@PCD,36\\, Summerhill Church@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "36, Summerhill Church, Stronsay Drive, AB15 6JL",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 2
+  }
+]
