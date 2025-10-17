@@ -1,0 +1,142 @@
+[
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Bernard Street@STR,CB6-1AU@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Bernard Street, CB6 1AU",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 21
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Chapel Street@STR,CB6@PCDD,CB6-1@PCDS}@STR|{CB6-1AD@PCD,2-50@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "2-50 Chapel Street, CB6 1AD",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 39
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Chiefs Street@STR,CB6@PCDD,CB6-1@PCDS}@STR|{CB6-1AR@PCD,1-23@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "1-23 Chiefs Street, CB6 1AR",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 20
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Chiefs Street@STR,CB6@PCDD,CB6-1@PCDS}@STR|{CB6-1AT@PCD,12-49@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "12-49 Chiefs Street, CB6 1AT",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 29
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Cromwell Road@STR,CB6-1AS@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Cromwell Road, CB6 1AS",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 23
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Downham Road@STR,CB6@PCDD}@STR|{CB6-1AH@PCD,CB6-1@PCDS,2-8@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "2-8 Downham Road, CB6 1AH",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 10
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Downham Road@STR,CB6@PCDD}@STR|{CB6-1AQ@PCD,CB6-1@PCDS,7-49@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "7-49 Downham Road, CB6 1AQ",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 29
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Downham Road@STR,CB6@PCDD}@STR|{CB6-1AF@PCD,CB6-1@PCDS,10-32\\, Rainbow Pre School@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "10-32, Rainbow Pre School, Downham Road, CB6 1AF",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 20
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Egremont Street@STR,CB6-1AE@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Egremont Street, CB6 1AE",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 47
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Fairfax Court@STR,CB6-1AJ@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Fairfax Court, CB6 1AJ",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 20
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Hills Lane@STR,CB6-1AY@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Hills Lane, CB6 1AY",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 43
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Little Lane@STR,CB6-1AZ@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Little Lane, CB6 1AZ",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 15
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Ribe Court@STR,CB6-1AW@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Ribe Court, CB6 1AW",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 20
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{St. Catherines@STR,CB6-1AP@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "St. Catherines, CB6 1AP",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 32
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{West Fen Road@STR,CB6@PCDD}@STR|{CB6-1AL@PCD,CB6-1@PCDS,1-42@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "1-42 West Fen Road, CB6 1AL",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 34
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{West Fen Road@STR,CB6@PCDD}@STR|{CB6-1AN@PCD,CB6-1@PCDS,17-70\\, 74-78@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "17-70, 74-78, West Fen Road, CB6 1AN",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 47
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Peacock Way@STR,CB6-1AB@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Peacock Way, CB6 1AB",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 20
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Downham Road@STR,CB6@PCDD}@STR|{CB6-1AG@PCD,CB6-1@PCDS,1-5@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "1-5 Downham Road, CB6 1AG",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 6
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|Lynn Road@STR|{CB6-1AA@PCD,CB6-1@PCDS,CB6@PCDD,17-27@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "17-27 Lynn Road, CB6 1AA",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 7
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Trinity Close@STR,CB6-1AX@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Trinity Close, CB6 1AX",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 4
+  }
+]

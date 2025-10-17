@@ -1,0 +1,212 @@
+[
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Francis Road@STR,E@PCDA,E10@PCDD,E10-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Francis Road, E10 6",
+    "locationsummary": "Waltham Forest, London",
+    "count": 468
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Abbotts Park Road@STR,E@PCDA,E10@PCDD,E10-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Abbotts Park Road, E10 6",
+    "locationsummary": "Waltham Forest, London",
+    "count": 175
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Argall Avenue@STR,E@PCDA,E10@PCDD,E10-7@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Argall Avenue, E10 7",
+    "locationsummary": "Waltham Forest, London",
+    "count": 300
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Auckland Road@STR,E@PCDA,E10@PCDD,E10-5@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Auckland Road, E10 5",
+    "locationsummary": "Waltham Forest, London",
+    "count": 167
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Beaumont Road@STR,E@PCDA,E10@PCDD,E10-5@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Beaumont Road, E10 5",
+    "locationsummary": "Waltham Forest, London",
+    "count": 336
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Beck Square@STR,E@PCDA,E10@PCDD,E10-7@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Beck Square, E10 7",
+    "locationsummary": "Waltham Forest, London",
+    "count": 310
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Canterbury Road@STR,E@PCDA,E10@PCDD,E10-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Canterbury Road, E10 6",
+    "locationsummary": "Waltham Forest, London",
+    "count": 236
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Claude Road@STR,E@PCDA,E10@PCDD,E10-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Claude Road, E10 6",
+    "locationsummary": "Waltham Forest, London",
+    "count": 217
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Dawlish Road@STR,E@PCDA,E10@PCDD,E10-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Dawlish Road, E10 6",
+    "locationsummary": "Waltham Forest, London",
+    "count": 201
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Dunedin Road@STR,E@PCDA,E10@PCDD,E10-5@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Dunedin Road, E10 5",
+    "locationsummary": "Waltham Forest, London",
+    "count": 231
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Farmer Road@STR,E@PCDA,E10@PCDD,E10-5@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Farmer Road, E10 5",
+    "locationsummary": "Waltham Forest, London",
+    "count": 184
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Huxley Road@STR,E@PCDA,E10@PCDD,E10-5@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Huxley Road, E10 5",
+    "locationsummary": "Waltham Forest, London",
+    "count": 178
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Leyton Grange Estate@STR,E@PCDA,E10@PCDD,E10-5@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Leyton Grange Estate, E10 5",
+    "locationsummary": "Waltham Forest, London",
+    "count": 270
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Leyton Green Road@STR,E@PCDA,E10@PCDD,E10-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Leyton Green Road, E10 6",
+    "locationsummary": "Waltham Forest, London",
+    "count": 187
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Morley Road@STR,E@PCDA,E10@PCDD,E10-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Morley Road, E10 6",
+    "locationsummary": "Waltham Forest, London",
+    "count": 190
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Murchison Road@STR,E@PCDA,E10@PCDD,E10-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Murchison Road, E10 6",
+    "locationsummary": "Waltham Forest, London",
+    "count": 334
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Osier Way@STR,E@PCDA,E10@PCDD,E10-5@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Osier Way, E10 5",
+    "locationsummary": "Waltham Forest, London",
+    "count": 223
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Ruckholt Road@STR,E@PCDA,E10@PCDD,E10-5@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Ruckholt Road, E10 5",
+    "locationsummary": "Waltham Forest, London",
+    "count": 279
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Skeltons Lane@STR,E@PCDA,E10@PCDD,E10-5@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Skeltons Lane, E10 5",
+    "locationsummary": "Waltham Forest, London",
+    "count": 191
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{St. Georges Road@STR,E@PCDA,E10@PCDD,E10-5@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "St. Georges Road, E10 5",
+    "locationsummary": "Waltham Forest, London",
+    "count": 170
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Waltham Forest@LAD|{Walnut Road@STR,E@PCDA,E10@PCDD,E10-5@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Walnut Road, E10 5",
+    "locationsummary": "Waltham Forest, London",
+    "count": 175
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Albert Gardens@STR,E1-0LH@PCD,E1-0@PCDS,E1@PCDD,E@PCDA}@STR",
+    "type": "STR",
+    "summaryline": "Albert Gardens, E1 0LH",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 149
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Boulcott Street@STR,E1-0HR@PCD,E1-0@PCDS,E1@PCDD,E@PCDA}@STR",
+    "type": "STR",
+    "summaryline": "Boulcott Street, E1 0HR",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 60
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Cannon Street Road@STR,E@PCDA,E1@PCDD}@STR|{E1-0BH@PCD,E1-0@PCDS,14-16\\, 22-56@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "14-16, 22-56, Cannon Street Road, E1 0BH",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 76
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Commercial Road@STR,E@PCDA}@STR|{E1-0HJ@PCD,E1-0@PCDS,E1@PCDD,571-599@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "571-599 Commercial Road, E1 0HJ",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 107
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Jamaica Street@STR,E@PCDA,E1@PCDD}@STR|{E1-0PE@PCD,E1-0@PCDS,73-201@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "73-201 Jamaica Street, E1 0PE",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 65
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Jamaica Street@STR,E@PCDA,E1@PCDD}@STR|{E1-0PF@PCD,E1-0@PCDS,203-241\\, 245-247@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "203-241, 245-247, Jamaica Street, E1 0PF",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 56
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Lipton Road@STR,E1-0LJ@PCD,E1-0@PCDS,E1@PCDD,E@PCDA}@STR",
+    "type": "STR",
+    "summaryline": "Lipton Road, E1 0LJ",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 61
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Summercourt Road@STR,E1-0SQ@PCD,E1-0@PCDS,E1@PCDD,E@PCDA}@STR",
+    "type": "STR",
+    "summaryline": "Summercourt Road, E1 0SQ",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 59
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Westport Street@STR,E1-0RA@PCD,E1-0@PCDS,E1@PCDD,E@PCDA}@STR",
+    "type": "STR",
+    "summaryline": "Westport Street, E1 0RA",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 62
+  }
+]
