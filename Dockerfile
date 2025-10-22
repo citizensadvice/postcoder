@@ -1,7 +1,11 @@
-FROM ruby:3.4.6-alpine3.22 AS builder
+FROM ruby:3.4.7-alpine3.22 AS base
 
 ENV APP_HOME=/app
 ENV LANG=C.UTF-8
+
+#################################################
+
+FROM base AS builder
 
 RUN apk add --update --no-cache build-base git yaml-dev
 
@@ -15,9 +19,8 @@ RUN bundle install && \
 
 #################################################
 
-FROM ruby:3.4.6-alpine3.22
+FROM base
 
-ENV APP_ROOT=/app
 ENV RACK_ENV=production
 ENV RUBY_YJIT_ENABLE=1
 
@@ -25,8 +28,8 @@ COPY --from=builder /usr/local/bundle/ /usr/local/bundle/
 
 RUN addgroup ruby -g 3000 && adduser -D -h /home/ruby -u 3000 -G ruby ruby
 
-COPY . $APP_ROOT
-WORKDIR $APP_ROOT
+COPY . $APP_HOME
+WORKDIR $APP_HOME
 
 RUN chown -R ruby /app && chmod -R u-w /app
 
