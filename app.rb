@@ -12,7 +12,11 @@ require_relative "lib/application_logger"
 require_relative "lib/mock_mode"
 require_relative "lib/cache"
 require_relative "lib/query"
+require_relative "lib/find_query"
+require_relative "lib/retrieve_query"
 require_relative "lib/mock_query"
+require_relative "lib/mock_find_query"
+require_relative "lib/mock_retrieve_query"
 require_relative "lib/http_error"
 
 configure { set :server, :puma }
@@ -36,6 +40,18 @@ get "/addresses/:postcode" do
 
   content_type query.options[:format].presence_in(%w[json xml]) || "json"
   (params[:refresh] == "true" ? nil : Cache.get(key)) || Cache.set(key, value)
+end
+
+get "/find-addresses/:query" do
+  halt 200, { "Content-Type" => "application/json" }, MockFindQuery.new(params).response if MockMode.enabled?
+  content_type find_query.options[:format].presence_in(%w[json xml]) || "json"
+  find_query_response.body.to_s
+end
+
+get "/retrieve-address/:id" do
+  halt 200, { "Content-Type" => "application/json" }, MockRetrieveQuery.new(params).response if MockMode.enabled?
+  content_type retrieve_query.options[:format].presence_in(%w[json xml]) || "json"
+  retrieve_query_response.body.to_s
 end
 
 get "/status" do
@@ -69,6 +85,22 @@ end
 
 def query
   @query ||= Query.new(params)
+end
+
+def find_query_response
+  @find_query_response ||= find_query.response
+end
+
+def find_query
+  @find_query ||= FindQuery.new(params)
+end
+
+def retrieve_query_response
+  @retrieve_query_response ||= retrieve_query.response
+end
+
+def retrieve_query
+  @retrieve_query ||= RetrieveQuery.new(params)
 end
 
 # Forbidden

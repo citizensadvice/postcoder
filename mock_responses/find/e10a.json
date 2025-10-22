@@ -1,0 +1,142 @@
+[
+  {
+    "id": "56728768",
+    "type": "ADD",
+    "summaryline": "Unit E10A-E10B, Knoll Business Centre",
+    "locationsummary": "325-327 Old Shoreham Road, Hove, East Sussex, BN3 7GS",
+    "count": 1
+  },
+  {
+    "id": "52777208",
+    "type": "ADD",
+    "summaryline": "E10A Westminster Halls, Harcourt Hill Campus",
+    "locationsummary": "Harcourt Hill, Oxford, Oxfordshire, OX2 9GP",
+    "count": 1
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Cable Street@STR,E@PCDA}@STR|{E1-0AE@PCD,E1-0@PCDS,E1@PCDD,294-364@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "294-364 Cable Street, E1 0AE",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 36
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Cable Street@STR,E@PCDA}@STR|{E1-0AF@PCD,E1-0@PCDS,E1@PCDD,366-412\\, 418-430@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "366-412, 418-430, Cable Street, E1 0AF",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 29
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Johnson Street@STR,E@PCDA,E1@PCDD,E1-0@PCDS}@STR|{E1-0AQ@PCD,61-71@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "61-71 Johnson Street, E1 0AQ",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 20
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Lukin Street@STR,E@PCDA,E1@PCDD,E1-0@PCDS}@STR|{E1-0AA@PCD,2\\, 12\\, 30-46@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "2, 12, 30-46, Lukin Street, E1 0AA",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 12
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Sutton Street@STR,E@PCDA,E1@PCDD,E1-0@PCDS}@STR|{E1-0AX@PCD,60\\, Gosling House@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "60, Gosling House, Sutton Street, E1 0AX",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 45
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Tarling Street@STR,E@PCDA,E1@PCDD}@STR|{E1-0AD@PCD,E1-0@PCDS,4-16\\, 20\\, 24@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "4-16, 20, 24, Tarling Street, E1 0AD",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 29
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Cable Street@STR,E@PCDA}@STR|{E1-0AH@PCD,E1-0@PCDS,E1@PCDD,375-377\\, 387@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "375-377, 387, Cable Street, E1 0AH",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 3
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Sutton Street@STR,E@PCDA,E1@PCDD,E1-0@PCDS}@STR|{E1-0AY@PCD,45-51\\, 55@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "45-51, 55, Sutton Street, E1 0AY",
+    "locationsummary": "Tower Hamlets, London",
+    "count": 5
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Cable Street@STR,E@PCDA}@STR|{E1-0AL@PCD,E1-0@PCDS,E1@PCDD,Chamberlain House@BNA}@BNA",
+    "type": "BNA",
+    "summaryline": "Chamberlain House",
+    "locationsummary": "Cable Street, Tower Hamlets, London, E1 0AL",
+    "count": 16
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Cable Street@STR,E@PCDA}@STR|{E1-0AJ@PCD,E1-0@PCDS,E1@PCDD,Donovan House@BNA}@BNA",
+    "type": "BNA",
+    "summaryline": "Donovan House",
+    "locationsummary": "Cable Street, Tower Hamlets, London, E1 0AJ",
+    "count": 10
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Cable Street@STR,E@PCDA}@STR|{E1-0AW@PCD,E1-0@PCDS,E1@PCDD,Fisher House@BNA}@BNA",
+    "type": "BNA",
+    "summaryline": "Fisher House",
+    "locationsummary": "Cable Street, Tower Hamlets, London, E1 0AW",
+    "count": 13
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Cable Street@STR,E@PCDA}@STR|{E1-0AN@PCD,E1-0@PCDS,E1@PCDD,Knowlden House@BNA}@BNA",
+    "type": "BNA",
+    "summaryline": "Knowlden House",
+    "locationsummary": "Cable Street, Tower Hamlets, London, E1 0AN",
+    "count": 12
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Cable Street@STR,E@PCDA}@STR|{E1-0AR@PCD,E1-0@PCDS,E1@PCDD,Moore House@BNA}@BNA",
+    "type": "BNA",
+    "summaryline": "Moore House",
+    "locationsummary": "Cable Street, Tower Hamlets, London, E1 0AR",
+    "count": 30
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Cable Street@STR,E@PCDA}@STR|{E1-0AP@PCD,E1-0@PCDS,E1@PCDD,Thornewill House@BNA}@BNA",
+    "type": "BNA",
+    "summaryline": "Thornewill House",
+    "locationsummary": "Cable Street, Tower Hamlets, London, E1 0AP",
+    "count": 32
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Cable Street@STR,E@PCDA}@STR|{E1-0AS@PCD,E1-0@PCDS,E1@PCDD,Vogler House@BNA}@BNA",
+    "type": "BNA",
+    "summaryline": "Vogler House",
+    "locationsummary": "Cable Street, Tower Hamlets, London, E1 0AS",
+    "count": 24
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Sutton Street@STR,E@PCDA,E1@PCDD,E1-0@PCDS}@STR|{E1-0AU@PCD,Gosling House@BNA}@BNA",
+    "type": "BNA",
+    "summaryline": "Gosling House",
+    "locationsummary": "Sutton Street, Tower Hamlets, London, E1 0AU",
+    "count": 45
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Sutton Street@STR,E@PCDA,E1@PCDD,E1-0@PCDS}@STR|{E1-0AG@PCD,18@NUM,Sonali Gardens@BNA}@BNA",
+    "type": "BNA",
+    "summaryline": "Sonali Gardens, 18 Sutton Street",
+    "locationsummary": "Tower Hamlets, London, E1 0AG",
+    "count": 40
+  },
+  {
+    "id": "UK@STATE|Greater London@CTY|London@LOC|Tower Hamlets@LAD|{Tarling Street@STR,E@PCDA,E1@PCDD}@STR|{E1-0AZ@PCD,E1-0@PCDS,Foley House@BNA}@BNA",
+    "type": "BNA",
+    "summaryline": "Foley House",
+    "locationsummary": "Tarling Street, Tower Hamlets, London, E1 0AZ",
+    "count": 44
+  }
+]

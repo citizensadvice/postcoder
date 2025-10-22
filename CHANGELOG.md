@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Unreleased
+
+- Add lookahead search endpoints, including find and retrieve queries
+- Add find and retrieve mock queries and data
+
 ## v4.3.3 _8 October 2025_
 
 - Ruby 3.4.6

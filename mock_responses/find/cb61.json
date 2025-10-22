@@ -1,0 +1,212 @@
+[
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Parsons Lane@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Parsons Lane, CB6 1",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 198
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Wisbech Road@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Wisbech Road, CB6 1",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 263
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Bentham Way@STR,CB6-1BS@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Bentham Way, CB6 1BS",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 62
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{John Amner Close@STR,CB6-1DT@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "John Amner Close, CB6 1DT",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 76
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|Lynn Road@STR|{CB6-1DD@PCD,CB6-1@PCDS,CB6@PCDD,33-91\\, Bell House\\, Stone Croft\\, Ely Beet Sports & Social ...@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "33-91, Bell House, Stone Croft, Ely Beet Sports & Social ..., Lynn Road, CB6 1DD",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 53
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|Lynn Road@STR|{CB6-1DE@PCD,CB6-1@PCDS,CB6@PCDD,44-96\\, 100-134\\, 140-150@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "44-96, 100-134, 140-150, Lynn Road, CB6 1DE",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 52
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Ashley Gardens@STR,CB6-1PD@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Ashley Gardens, CB6 1PD",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 55
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Black Horse Drove@STR,CB6-1EG@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Black Horse Drove, CB6 1EG",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 56
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Chamberlain Fields@STR,CB6-1FJ@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Chamberlain Fields, CB6 1FJ",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 54
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Cottier Drive@STR,CB6-1FG@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Cottier Drive, CB6 1FG",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 56
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Croft Park Road@STR,CB6-1NZ@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Croft Park Road, CB6 1NZ",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 65
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Harvest Way@STR,CB6-1EY@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Harvest Way, CB6 1EY",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 78
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{High Street@STR,CB6-1HE@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "High Street, CB6 1HE",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 51
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Monkswood@STR,CB6-1JD@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Monkswood, CB6 1JD",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 51
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{The Crescent@STR,CB6-1HS@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "The Crescent, CB6 1HS",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 56
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Whitworth Way@STR,CB6-1SS@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Whitworth Way, CB6 1SS",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 52
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Yeomans Way@STR,CB6-1FL@PCD,CB6-1@PCDS,CB6@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Yeomans Way, CB6 1FL",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 75
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Chettisham@LOC,Ely@PTN,CB@PCDA,CB6@PCDD,CB6-1@PCDS}@LOC",
+    "type": "LOC",
+    "summaryline": "Chettisham, CB6 1",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 135
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Chapel Street@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Chapel Street, CB6 1",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 65
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Ely@LOC,CB@PCDA}@LOC|{Chiefs Street@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Chiefs Street, CB6 1",
+    "locationsummary": "Ely, Cambridgeshire",
+    "count": 51
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Camel Road@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Camel Road, CB6 1",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 66
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{City Road@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "City Road, CB6 1",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 59
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Ely Road@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Ely Road, CB6 1",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 156
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Fishers Bank@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Fishers Bank, CB6 1",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 82
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Hempfield Place@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Hempfield Place, CB6 1",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 67
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Highfield Drive@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Highfield Drive, CB6 1",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 78
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Longfield Road@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Longfield Road, CB6 1",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 54
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Main Street@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Main Street, CB6 1",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 73
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Meadow Court@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Meadow Court, CB6 1",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 92
+  },
+  {
+    "id": "UK@STATE|Cambridgeshire@CTY|{Littleport@LOC,Ely@PTN,CB@PCDA}@LOC|{Newnham Chase@STR,CB6@PCDD,CB6-1@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Newnham Chase, CB6 1",
+    "locationsummary": "Littleport, Ely, Cambridgeshire",
+    "count": 83
+  }
+]

@@ -8,6 +8,8 @@ This service can also operate in a mock mode where no external calls are made.
 
 ## API
 
+### List of addresses
+
 GET `http://example.com/addresses/{searchterm}`
 
 This will pass the search term to GET `https://ws.postcoder.com/pcw/{apikey}/address/uk/{searchterm}`
@@ -15,6 +17,32 @@ This will pass the search term to GET `https://ws.postcoder.com/pcw/{apikey}/add
 The query options `format`, `line`, `page`, `include`, `exclude`, `callback`, `alias` and `addtags` will also be passed.
 
 If the query option `refresh=true` is provided the cache will be skipped and updated, _for that request_.
+
+### Lookahead search
+
+#### Full address
+
+GET `http://example.com/find-addresses/{query}`
+
+This will pass the search term to GET `https://ws.postcoder.com/pcw/autocomplete/find?query={query}&country={countrycode}&apikey={apikey}`
+
+The query options `format`, `query`, `country`, `line`, `page`, `include`, `exclude`, `callback`, `alias` and `addtags` will also be passed.
+
+#### Grouped addresses
+
+GET `http://example.com/find-addresses/{query}&{pathfilter}`
+
+This will pass the search term to GET `https://ws.postcoder.com/pcw/autocomplete/find?query={searchterm}&country={countrycode}&apikey={apikey}`
+
+The query options `format`, `query`, `pathfilter`, `country`, `line`, `page`, `include`, `exclude`, `callback`, `alias` and `addtags` will also be passed.
+
+#### Retrieve
+
+GET `http://example.com/retrieve-address/{id}`
+
+This will pass the search term to GET `https://ws.postcoder.com/pcw/autocomplete/retrieve/?id={id}&query={searchterm}&country={countrycode}&apikey={apikey}`
+
+The query options `format`, `id`, `query`, `country`, `line`, `page`, `include`, `exclude`, `callback`, `alias` and `addtags` will also be passed.
 
 ## Build
 

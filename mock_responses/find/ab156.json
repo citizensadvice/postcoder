@@ -1,0 +1,212 @@
+[
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Gairsay Road@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Gairsay Road, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 175
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Maidencraig Drive@STR,AB15-6BQ@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Maidencraig Drive, AB15 6BQ",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 50
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Ronaldsay Square@STR,AB15-6NH@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Ronaldsay Square, AB15 6NH",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 52
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Rosewell Gardens@STR,AB15-6HZ@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Rosewell Gardens, AB15 6HZ",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 78
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Rosewell Park@STR,AB15-6HT@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Rosewell Park, AB15 6HT",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 51
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Shapinsay Court@STR,AB15-6NG@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Shapinsay Court, AB15 6NG",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 73
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Angusfield Avenue@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Angusfield Avenue, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 78
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Auskerry Avenue@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Auskerry Avenue, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 142
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Dennis Close@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Dennis Close, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 120
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Denwood@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Denwood, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 96
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Eday Drive@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Eday Drive, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 55
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Eday Road@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Eday Road, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 98
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Hoy Place@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Hoy Place, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 118
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Maidencraig Way@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Maidencraig Way, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 79
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Sanday Road@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Sanday Road, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 52
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Stronsay Drive@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Stronsay Drive, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 115
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Summerhill Crescent@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Summerhill Crescent, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 82
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Summerhill Drive@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Summerhill Drive, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 157
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Summerhill Road@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Summerhill Road, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 90
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Westray Road@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Westray Road, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 87
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Woodend Crescent@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Woodend Crescent, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 127
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Woodend Place@STR,AB15@PCDD,AB15-6@PCDS}@STR",
+    "type": "STR",
+    "summaryline": "Woodend Place, AB15 6",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 72
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Anderson Drive@STR,AB15@PCDD}@STR|{AB15-6BW@PCD,AB15-6@PCDS,104-116@RNG}@PCD",
+    "type": "PCD",
+    "summaryline": "104-116 Anderson Drive, AB15 6BW",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 23
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Balfron Place@STR,AB15-6HW@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Balfron Place, AB15 6HW",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 10
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Bressay Brae@STR,AB15-6WJ@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Bressay Brae, AB15 6WJ",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 45
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Buzzard Place@STR,AB15-6FQ@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Buzzard Place, AB15 6FQ",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 36
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Campsie Place@STR,AB15-6HL@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Campsie Place, AB15 6HL",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 12
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Cava Close@STR,AB15-6WL@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Cava Close, AB15 6WL",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 36
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Craigden@STR,AB15-6YW@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Craigden, AB15 6YW",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 14
+  },
+  {
+    "id": "UK@STATE|Aberdeenshire@CTY|{Aberdeen@LOC,AB@PCDA}@LOC|{Denbank Crescent@STR,AB15-6FH@PCD,AB15-6@PCDS,AB15@PCDD}@STR",
+    "type": "STR",
+    "summaryline": "Denbank Crescent, AB15 6FH",
+    "locationsummary": "Aberdeen, Aberdeenshire",
+    "count": 21
+  }
+]
