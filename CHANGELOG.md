@@ -4,6 +4,8 @@
 
 - Add lookahead search endpoints, including find and retrieve queries
 - Add find and retrieve mock queries and data
+- Ruby 3.4.7
+- Gem updates
 
 ## v4.3.3 _8 October 2025_
 
