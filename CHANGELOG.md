@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v4.4.0 _22 October 2025_
 
 - Add lookahead search endpoints, including find and retrieve queries
 - Add find and retrieve mock queries and data

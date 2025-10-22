@@ -19,7 +19,6 @@ describe RetrieveQuery do
       .to_return(status: 200, body: read_json("WA129EF"))
 
     subject = described_class.new(query: "WA129EF", id: "26186107")
-    puts subject.options
     expect(subject.response.to_s).to eq read_json("WA129EF")
   end
 end
