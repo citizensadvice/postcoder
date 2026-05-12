@@ -1,4 +1,4 @@
-FROM ruby:3.4.7-alpine3.22 AS base
+FROM ruby:3.4.9-alpine3.22 AS base
 
 ENV APP_HOME=/app
 ENV LANG=C.UTF-8
@@ -10,7 +10,7 @@ FROM base AS builder
 RUN apk add --update --no-cache build-base git yaml-dev
 
 WORKDIR $APP_HOME
-COPY Gemfile* /app/
+COPY .ruby-version Gemfile* /app/
 
 RUN bundle install && \
     rm -rf /usr/local/bundle/*/*/cache && \
