@@ -10,7 +10,7 @@ FROM base AS builder
 RUN apk add --update --no-cache build-base git yaml-dev
 
 WORKDIR $APP_HOME
-COPY Gemfile* /app/
+COPY .ruby-version Gemfile* /app/
 
 RUN bundle install && \
     rm -rf /usr/local/bundle/*/*/cache && \
