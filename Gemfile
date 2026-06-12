@@ -9,7 +9,7 @@ gem "sinatra-contrib", require: false
 
 gem "activesupport"
 gem "http"
-gem "puma"
+gem "puma", "~> 7.2.1"
 gem "rackup"
 gem "redis"
 
