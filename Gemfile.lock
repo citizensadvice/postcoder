@@ -83,7 +83,7 @@ GEM
     multi_json (1.17.0)
     mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
-    newrelic_rpm (10.7.0)
+    newrelic_rpm (10.7.1)
       logger
     nio4r (2.7.5)
     parallel (1.27.0)
