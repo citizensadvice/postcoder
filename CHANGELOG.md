@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v4.5.1 _22 October 2026_
+
+- Ruby 3.4.11
+- Alpine 3.24
+- Picks up ca-certificates-bundle 20261020, which removes the compromised eMudhra intermediates
+
 ## v4.4.0 _22 October 2025_
 
 - Add lookahead search endpoints, including find and retrieve queries
