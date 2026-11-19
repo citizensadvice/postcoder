@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.5.2 _19 November 2026_
+
+- Ruby 3.4.13
+
 ## v4.5.1 _22 October 2026_
 
 - Ruby 3.4.12
